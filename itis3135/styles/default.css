@@ -1,0 +1,102 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Soft slate-tinted off-white */
+    color: #1a2530;            /* Dark charcoal, not pure black */
+    margin: 0;
+    padding: 16px;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #0b3d2e; /* Deep evergreen */
+    color: #e2f0d9;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+header h1 {
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+}
+
+nav {
+    margin: 10px 0;
+}
+
+/* Hyperlinks: No default browser blue or purple */
+a:link {
+    color: #1b7a5a;
+    font-weight: 600;
+}
+
+a:visited {
+    color: #11533d;
+}
+
+header nav a:link,
+header nav a:visited,
+footer nav a:link,
+footer nav a:visited {
+    color: #b7e4c7;
+}
+
+main {
+    max-width: 850px;
+    margin: 24px auto;
+    background-color: #fdfdfd;
+    padding: 24px 32px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+figure {
+    text-align: center;
+    margin: 20px auto;
+}
+
+figcaption {
+    font-style: italic;
+    color: #4a5568;
+    margin-top: 8px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+.validation-badges img {
+    border: 0;
+    width: 88px;
+    height: 31px;
+    vertical-align: middle;
+    margin: 0 4px;
+}
+
+/* Responsive Media Query */
+@media (max-width: 650px) {
+    body {
+        padding: 8px;
+    }
+    main {
+        padding: 16px;
+    }
+}
+
+figure {
+    text-align: center;
+    margin: 24px auto;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: gives clean rounded corners */
+}
+
+figcaption {
+    font-style: italic;
+    color: #4a5568;
+    margin-top: 8px;
+}
