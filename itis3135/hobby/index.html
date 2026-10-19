@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A personal guide to learning and playing the piano, from first notes to building a regular practice routine.">
+    <title>Learning Piano | Hobby Website</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="https://lint.page/kit/4d0fe3.js" defer></script>
+
+    <style>
+        /* Color palette: midnight plum, lavender, and warm cream */
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background-color: #f3edf7;
+            color: #30283b;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        header {
+            background: linear-gradient(135deg, #30213f, #5a3f70);
+            color: #fff8ee;
+            padding: 2rem 1.25rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            letter-spacing: 0.04em;
+        }
+
+        header p {
+            max-width: 700px;
+            margin: 0.6rem auto 1.25rem;
+            color: #f0e5f6;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 0.35rem 0.55rem;
+        }
+
+        nav a {
+            display: inline-block;
+            color: #fff8ee;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.45rem 0.7rem;
+            border: 2px solid transparent;
+            border-radius: 0.55rem;
+        }
+
+        nav a:hover,
+        nav a:focus-visible {
+            background-color: #e7d7f0;
+            color: #30213f;
+            outline: 2px solid #fff8ee;
+            outline-offset: 2px;
+        }
+
+        nav a[aria-current="page"] {
+            background-color: #f5d6a7;
+            color: #30213f;
+        }
+
+        .divider {
+            color: #f5d6a7;
+            user-select: none;
+        }
+
+        main {
+            max-width: 1050px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            min-height: 60vh;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        section {
+            background-color: #fffaf2;
+            border: 1px solid #e2d4e9;
+            border-radius: 1.1rem;
+            padding: clamp(1.2rem, 4vw, 2.4rem);
+            box-shadow: 0 6px 18px rgba(48, 33, 63, 0.1);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #503765;
+            font-size: clamp(1.6rem, 4vw, 2.2rem);
+            line-height: 1.25;
+            border-bottom: 3px solid #d9a75e;
+            padding-bottom: 0.65rem;
+        }
+
+        h3 {
+            color: #674b7e;
+            margin-top: 1.5rem;
+        }
+
+        a {
+            color: #674080;
+        }
+
+        main a:hover,
+        main a:focus-visible {
+            color: #8a4b20;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+            gap: 1rem;
+            margin: 1.25rem 0;
+        }
+
+        .info-card {
+            background-color: #f0e7f5;
+            border-left: 5px solid #8b6aa3;
+            border-radius: 0.65rem;
+            padding: 1rem 1.1rem;
+        }
+
+        .info-card h3 {
+            margin-top: 0;
+        }
+
+        figure {
+            margin: 1.75rem 0;
+            padding: 1rem;
+            background-color: #f7f0e8;
+            border-radius: 0.85rem;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            max-width: 760px;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 0.55rem;
+        }
+
+        figcaption {
+            margin-top: 0.75rem;
+            text-align: center;
+            font-weight: bold;
+            color: #503765;
+        }
+
+        .image-note {
+            margin: 0.45rem auto 0;
+            max-width: 760px;
+            font-size: 0.9rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            background-color: #fffdf9;
+        }
+
+        caption {
+            text-align: left;
+            font-weight: bold;
+            color: #503765;
+            padding: 0.5rem 0;
+        }
+
+        th,
+        td {
+            border: 1px solid #cdbbd9;
+            padding: 0.7rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #e7d7f0;
+            color: #30213f;
+        }
+
+        .callout {
+            background-color: #fff0d8;
+            border-left: 5px solid #c58a3d;
+            border-radius: 0.5rem;
+            padding: 1rem 1.2rem;
+        }
+
+        footer {
+            background-color: #30213f;
+            color: #fff8ee;
+            text-align: center;
+            padding: 1.75rem 1rem;
+        }
+
+        footer p {
+            margin: 0.4rem 0 1rem;
+        }
+
+        footer a {
+            color: #f5d6a7;
+        }
+
+        footer a:hover,
+        footer a:focus-visible {
+            color: #ffffff;
+        }
+
+        .footer-nav {
+            margin-top: 0.75rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 1.5rem 0.75rem;
+            }
+
+            nav {
+                gap: 0.25rem;
+            }
+
+            nav a {
+                padding: 0.4rem 0.5rem;
+            }
+
+            main {
+                margin: 1rem auto;
+                padding: 0 0.65rem;
+            }
+
+            section {
+                padding: 1.1rem;
+            }
+
+            th,
+            td {
+                padding: 0.45rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Learning Piano</h1>
+        <p>A beginner-friendly journey through practice, music, and the joy of playing.</p>
+
+        <nav aria-label="Main hobby navigation">
+            <a href="#what" data-page="what" aria-current="page">What</a>
+            <span class="divider" aria-hidden="true"> ♫ </span>
+            <a href="#who" data-page="who">Who</a>
+            <span class="divider" aria-hidden="true"> ♫ </span>
+            <a href="#when" data-page="when">When</a>
+            <span class="divider" aria-hidden="true"> ♫ </span>
+            <a href="#where" data-page="where">Where</a>
+            <span class="divider" aria-hidden="true"> ♫ </span>
+            <a href="#how" data-page="how">How</a>
+            <span class="divider" aria-hidden="true"> ♫ </span>
+            <a href="#why" data-page="why">Why</a>
+            <span class="divider" aria-hidden="true"> ♫ </span>
+            <a href="#ai-prompts" data-page="ai-prompts">AI Prompts</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="what" class="page active">
+            <h2>What: Discovering the Piano</h2>
+            <p class="intro">
+                Learning piano is a hobby that combines coordination, patience, and creativity.
+                A piano can play a melody and its accompaniment at the same time, so even a simple
+                piece can feel complete and expressive. Beginners can start with a few notes and gradually
+                work toward songs theyenjoy.
+            </p>
+
+            <div class="content-grid">
+                <article class="info-card">
+                    <h3>Learn the Basics</h3>
+                    <p>Get familiar with the keyboard, note names, rhythm, and how to sit comfortably at the instrument.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Explore Different Music</h3>
+                    <p>Try classical pieces, film music, pop arrangements, jazz, or melodies written for beginners.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Build Gradually</h3>
+                    <p>Start with short exercises and simple songs, then increase difficulty as your confidence grows.</p>
+                </article>
+            </div>
+
+            <figure>
+                <img src="images/piano-what.jpg"
+                     alt="A piano keyboard with sheet music on the music stand">
+                <figcaption>A keyboard, a piece of music, and a place to begin.</figcaption>
+                <p class="image-note"><em>Image prompt/source: Replace this note with the actual AI image prompt if this image is AI-generated. If it is your own or an open-source image, identify its source and include any required attribution.</em></p>
+            </figure>
+
+            <p class="callout">
+                <strong>Beginner tip:</strong> You do not need to learn an entire song in one sitting.
+                A small section played carefully is good progress.
+            </p>
+        </section>
+
+        <section id="who" class="page">
+            <h2>Who: Who Can Learn Piano?</h2>
+            <p class="intro">
+                Piano is for curious people at many different stages of life. You can learn through
+                lessons, online tutorials, books, or a mix of methods. Previous musical experience
+                can help, but it is not a requirement for getting started.
+            </p>
+
+            <h3>Different Ways to Learn</h3>
+            <ul>
+                <li><strong>Independent learners:</strong> Use beginner books, practice apps, and online lessons.</li>
+                <li><strong>Students with a teacher:</strong> Get  feedback on technique and rhythm.</li>
+                <li><strong>People learning with others:</strong> Share songs, practice tips, and encouragement with friends/music group.</li>
+            </ul>
+
+            <figure>
+                <img src="images/piano-who.jpg"
+                     alt="A beginner sitting at a piano and practicing a short musical passage">
+                <figcaption>Every pianist starts somewhere.</figcaption>
+                <p class="image-note"><em>Image prompt/source: Replace this note with the actual AI image prompt if this image is AI-generated. Otherwise, identify the image's source and provide attribution when required.</em></p>
+            </figure>
+
+            <div class="content-grid">
+                <article class="info-card">
+                    <h3>Beginners</h3>
+                    <p>Start with posture, finger numbers, note names, and short pieces.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Returning Players</h3>
+                    <p>Review familiar skills slowly and rebuild a comfortable routine.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Music Lovers</h3>
+                    <p>Choose songs that make practice interesting and give you a reason to keep learning.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="when" class="page">
+            <h2>When: Finding Time to Practice</h2>
+            <p class="intro">
+                Regular practice is usually more useful than one very long session followed by a
+                week away from the keyboard. The best time is a time you can repeat comfortably
+                without rushing.
+            </p>
+
+            <h3>Example Practice Schedule</h3>
+            <table>
+                <caption>A flexible 20-minute beginner practice session</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Time</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Goal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>5 minutes</td>
+                        <td>Warm-up and note review</td>
+                        <td>Get comfortable with the keyboard.</td>
+                    </tr>
+                    <tr>
+                        <td>10 minutes</td>
+                        <td>Practice a short passage</td>
+                        <td>Work slowly on accuracy and rhythm.</td>
+                    </tr>
+                    <tr>
+                        <td>5 minutes</td>
+                        <td>Play something familiar or fun</td>
+                        <td>End on an enjoyable musical moment.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <figure>
+                <img src="images/piano-when.jpg"
+                     alt="Sheet music on a piano ready for a practice session">
+                <figcaption>Set aside a little time and make it count.</figcaption>
+                <p class="image-note"><em>Image prompt/source: Replace this note with the actual AI image prompt if this image is AI-generated. Otherwise, identify the image's source and provide attribution when required.</em></p>
+            </figure>
+
+            <div class="content-grid">
+                <article class="info-card">
+                    <h3>Before School or Work</h3>
+                    <p>A short session can be a calm way to begin the day if your schedule allows it.</p>
+                </article>
+                <article class="info-card">
+                    <h3>After Responsibilities</h3>
+                    <p>Practice when you can focus and are not trying to squeeze in too many things at once.</p>
+                </article>
+                <article class="info-card">
+                    <h3>On Busy Days</h3>
+                    <p>Review a few measures or listen closely to a piece instead of abandoning music completely.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="where" class="page">
+            <h2>Where: Creating a Place to Play</h2>
+            <p class="intro">
+                A good practice space does not need to be fancy. It should be comfortable, safe for
+                the instrument, and quiet enough that you can listen to the notes you are playing.
+            </p>
+
+            <h3>Possible Practice Spaces</h3>
+            <ul>
+                <li><strong>At home:</strong> An acoustic piano or digital keyboard in a comfortable room.</li>
+                <li><strong>At school or a community music space:</strong> A practice room may offer an instrument when one is available.</li>
+                <li><strong>Online:</strong> A digital lesson or tutorial can help when in-person instruction is not convenient.</li>
+            </ul>
+
+            <figure>
+                <img src="images/piano-where.jpg"
+                     alt="A piano set up in a clean, comfortable space near the stairs">
+                <figcaption>A welcoming practice space makes it easier to return to the keys.</figcaption>
+                <p class="image-note"><em>Image prompt/source: Replace this note with the actual AI image prompt if this image is AI-generated. Otherwise, identify the image's source and provide attribution when required.</em></p>
+            </figure>
+
+            <div class="content-grid">
+                <article class="info-card">
+                    <h3>Comfort</h3>
+                    <p>Choose a bench or chair that lets you sit upright with relaxed shoulders and comfortable arm positioning.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Lighting</h3>
+                    <p>Use enough light to read the music without straining your eyes.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Organization</h3>
+                    <p>Keep sheet music, a pencil, and any practice notes close by so you can begin easily.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="how" class="page">
+            <h2>How: Getting Started on the Keys</h2>
+            <p class="intro">
+                Learning piano is easier when a big goal is broken into small steps. Focus on
+                comfortable technique and accurate playing before trying to play quickly.
+            </p>
+
+            <h3>A Beginner's Road Map</h3>
+            <ol>
+                <li><strong>Learn the keyboard:</strong> Find groups of two and three black keys and use them to locate note names.</li>
+                <li><strong>Practice rhythm:</strong> Count a steady beat and clap or tap simple rhythms before playing them.</li>
+                <li><strong>Start hands separately:</strong> Learn a short melody or accompaniment with one hand at a time.</li>
+                <li><strong>Combine slowly:</strong> Put the hands together only when each part feels reasonably secure.</li>
+                <li><strong>Review and reflect:</strong> Notice what improved and choose one small goal for the next session.</li>
+            </ol>
+
+            <figure>
+                <img src="images/piano-how.jpg"
+                     alt="Hands resting over piano keys while practicing a simple exercise">
+                <figcaption>Slow practice helps build reliable habits.</figcaption>
+                <p class="image-note"><em>Image prompt/source: Replace this note with the actual AI image prompt if this image is AI-generated. Otherwise, identify the image's source and provide attribution when required.</em></p>
+            </figure>
+
+            <div class="content-grid">
+                <article class="info-card">
+                    <h3>Useful Tools</h3>
+                    <p>A keyboard or piano, a stable seat, beginner sheet music, and a metronome can help you practice.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Practice Strategy</h3>
+                    <p>Divide a difficult song into short sections and repeat each section at a manageable tempo.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Track Progress</h3>
+                    <p>Write down a specific goal, such as playing four measures evenly or changing chords smoothly.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="why" class="page">
+            <h2>Why: The Joy of Playing Piano</h2>
+            <p class="intro">
+                Piano can be more than learning the right notes. It can be a creative outlet, a
+                way to explore music you love, and a satisfying reminder that skills grow with
+                patience and practice.
+            </p>
+
+            <figure>
+                <img src="images/piano-why.jpg"
+                     alt="A simple piano setup that looks inviting">
+                <figcaption>Music gives practice a purpose.</figcaption>
+                <p class="image-note"><em>Image prompt/source: Replace this note with the actual AI image prompt if this image is AI-generated. Otherwise, identify the image's source and provide attribution when required.</em></p>
+            </figure>
+
+            <div class="content-grid">
+                <article class="info-card">
+                    <h3>Creativity</h3>
+                    <p>Experiment with dynamics, tempo, and expression to make a piece feel more personal.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Concentration</h3>
+                    <p>Reading music and coordinating both hands gives you a focused activity to work on.</p>
+                </article>
+                <article class="info-card">
+                    <h3>Progress You Can Hear</h3>
+                    <p>Returning to a passage over time lets you notice improvements that may be hard to see day by day.</p>
+                </article>
+            </div>
+
+            <h3>Keep the Hobby Enjoyable</h3>
+            <p>
+                Balance exercises with songs you genuinely want to play. Celebrate small milestones,
+                take breaks when you need them, and remember that mistakes are a normal part of learning.
+            </p>
+            <p class="callout">
+                <strong>My piano mindset:</strong> Be patient, stay curious, and let progress happen one note at a time.
+            </p>
+        </section>
+
+        <section id="ai-prompts" class="page">
+            <h2>AI Prompts and Image Credits</h2>
+            <p class="intro">
+                This section discusses AI assistance used while building the site. 
+            </p>
+
+            <h3>Prompt for Navigation in Website Code</h3>
+            <blockquote>
+                Please make navigation links for a website about piano that I am building. 
+                it needs 7 different sections/locations which are what, who, when, where, how, why, and AI prompts. 
+                I want it to be like a single page website with the different sections.
+            </blockquote>
+            <p><em>Replace or supplement this example with the actual prompt you used to request the website code.</em></p>
+
+            <h3>Prompt for Website Content</h3>
+            <blockquote>
+                Write beginner-friendly website content about learning piano. Include practical information
+                about practice routines, learning the keyboard, choosing a practice space, and reasons
+                people enjoy playing piano.
+            </blockquote>
+            <p><em>Please make navigation links for a website about piano that I am building. 
+                it needs 7 different sections/locations which are what, who, when, where, how, why, and AI prompts. 
+                I want it to be like a single page website with the different sections.</em></p>
+
+            <figure>
+                <img src="images/piano-ai.jpg"
+                     alt="A simple creative workspace with piano keys and music notes">
+                <figcaption>AI tools can support a project, while the final site should reflect the creator's choices.</figcaption>
+                <p class="image-note"><em>AI image prompt/source: Replace this note with the exact prompt used for this image if AI-generated. Otherwise, identify the image's source and include attribution when required.</em></p>
+            </figure>
+
+            <h3>Image Prompts and Sources</h3>
+            <ul>
+                <li><strong>What image:</strong> Add the actual prompt or source for <code>piano-what.jpg</code>.</li>
+                <li><strong>Who image:</strong> Add the actual prompt or source for <code>piano-who.jpg</code>.</li>
+                <li><strong>When image:</strong> Add the actual prompt or source for <code>piano-when.jpg</code>.</li>
+                <li><strong>Where image:</strong> Add the actual prompt or source for <code>piano-where.jpg</code>.</li>
+                <li><strong>How image:</strong> Add the actual prompt or source for <code>piano-how.jpg</code>.</li>
+                <li><strong>Why image:</strong> Add the actual prompt or source for <code>piano-why.jpg</code>.</li>
+                <li><strong>AI section image:</strong> Add the actual prompt or source for <code>piano-ai.jpg</code>.</li>
+            </ul>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <p>Page designed by <a href="chelsiganugapantadesigns.co/index.html">Chelsi Ganugapanta Designs</a></p>
+            &copy; 2026
+        </p>
+        <p>Learning Piano | A hobby website about practice, patience, and music.</p>
+        <nav class="footer-nav" aria-label="Validations">
+            <script src="https://unpkg.com/htmlincludejs"></script>
+            <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+            <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+        </nav>
+    </footer>
+
+    <script>
+        const navigationLinks = document.querySelectorAll('nav a[data-page]');
+        const pages = document.querySelectorAll('main section.page');
+
+        function showPage(pageId) {
+            const selectedPage = document.getElementById(pageId);
+
+            if (!selectedPage || !selectedPage.classList.contains('page')) {
+                return;
+            }
+
+            pages.forEach(function (page) {
+                page.classList.remove('active');
+            });
+
+            selectedPage.classList.add('active');
+
+            navigationLinks.forEach(function (link) {
+                if (link.dataset.page === pageId) {
+                    link.setAttribute('aria-current', 'page');
+                } else {
+                    link.removeAttribute('aria-current');
+                }
+            });
+        }
+
+        navigationLinks.forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                const pageId = link.dataset.page;
+                showPage(pageId);
+                history.replaceState(null, '', '#' + pageId);
+            });
+        });
+
+        window.addEventListener('hashchange', function () {
+            const pageId = window.location.hash.slice(1);
+            if (pageId) {
+                showPage(pageId);
+            } else {
+                showPage('what');
+            }
+        });
+
+        const initialPage = window.location.hash.slice(1);
+        if (initialPage && document.getElementById(initialPage)?.classList.contains('page')) {
+            showPage(initialPage);
+        } else {
+            showPage('what');
+        }
+    </script>
+</body>
+</html>
