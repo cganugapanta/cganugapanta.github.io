@@ -1,4 +1,4 @@
-code: <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -28,7 +28,15 @@ code: <!DOCTYPE html>
             line-height: 1.7;
         }
 
+        h1,
+        h2,
+        h3 {
+            font-family: Georgia, "Times New Roman", serif;
+        }
+
         header {
+            max-width: 1200px;
+            margin: 0 auto;
             background: linear-gradient(135deg, #30213f, #5a3f70);
             color: #fff8ee;
             padding: 2rem 1.25rem 1.5rem;
@@ -215,6 +223,8 @@ code: <!DOCTYPE html>
         }
 
         footer {
+            max-width: 1200px;
+            margin: 0 auto;
             background-color: #30213f;
             color: #fff8ee;
             text-align: center;
@@ -231,6 +241,7 @@ code: <!DOCTYPE html>
 
         footer a:hover,
         footer a:focus-visible {
+            /* White improves contrast when hovering over links on the dark purple footer. */
             color: #ffffff;
         }
 
