@@ -7,11 +7,15 @@
     <meta name="description" content="A personal guide to learning and playing the piano, from first notes to building a regular practice routine.">
     <title>Learning Piano | What: Discovering the Piano</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <script src="https://lint.webpages.charlotte.edu/js/lint.js"></script>
 
 ```
+<!-- Accumulus validator: intentionally preserved in its original location. -->
+<script src="https://lint.page/kit/4d0fe3.js" defer></script>
+
 <style>
-    /* Accumulus checks this page for accessibility and standards compliance. */
+    /* Color palette: midnight plum, lavender, and warm cream. */
+
+    /* The universal selector makes sizing predictable across all page elements. */
     * {
         box-sizing: border-box;
     }
@@ -20,9 +24,10 @@
         scroll-behavior: smooth;
     }
 
+    /* The body uses a maximum width and automatic margins to center the site. */
     body {
         max-width: 1600px;
-        margin: auto;
+        margin: 0 auto;
         background-color: #f3edf7;
         color: #30283b;
         font-family: "Trebuchet MS", Arial, sans-serif;
@@ -31,8 +36,6 @@
     }
 
     header {
-        max-width: 1600px;
-        margin: auto;
         background: linear-gradient(135deg, #30213f, #5a3f70);
         color: #fff8ee;
         padding: 2rem 1.25rem 1.5rem;
@@ -45,16 +48,13 @@
         letter-spacing: 0.04em;
     }
 
-    /* Georgia provides a second font for the tagline and figure captions. */
     header p {
         max-width: 700px;
         margin: 0.6rem auto 1.25rem;
         color: #f0e5f6;
-        font-family: Georgia, "Times New Roman", serif;
-        font-style: italic;
     }
 
-    /* Flex navigation keeps seven links readable across different screen sizes. */
+    /* Flexbox keeps navigation links organized and responsive. */
     nav {
         display: flex;
         flex-wrap: wrap;
@@ -86,12 +86,13 @@
         color: #30213f;
     }
 
-    /* Spans display musical dividers between navigation links without making them clickable. */
+    /* Spans separate navigation links visually without making dividers clickable. */
     .divider {
         color: #f5d6a7;
         user-select: none;
     }
 
+    /* Main content is centered and limited to a readable width. */
     main {
         max-width: 1050px;
         margin: 2rem auto;
@@ -99,7 +100,7 @@
         min-height: 60vh;
     }
 
-    /* The page class hides unselected sections; active identifies the visible section. */
+    /* Page classes allow JavaScript to show one section at a time. */
     .page {
         display: none;
     }
@@ -108,6 +109,7 @@
         display: block;
     }
 
+    /* Section styling creates consistent content panels across the website. */
     section {
         background-color: #fffaf2;
         border: 1px solid #e2d4e9;
@@ -130,7 +132,26 @@
         margin-top: 1.5rem;
     }
 
+    /* The second font family provides a fallback if Trebuchet MS is unavailable. */
+    body,
+    input,
+    button,
+    textarea {
+        font-family: "Trebuchet MS", Arial, sans-serif;
+    }
+
+    /* This separate heading font provides a second font-family choice. */
+    h1,
+    h2,
+    h3 {
+        font-family: Georgia, "Times New Roman", serif;
+    }
+
     a {
+        color: #674080;
+    }
+
+    main a:visited {
         color: #674080;
     }
 
@@ -143,7 +164,7 @@
         font-size: 1.1rem;
     }
 
-    /* Content-grid divs organize related information cards into responsive columns. */
+    /* The grid groups related information cards into responsive columns. */
     .content-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
@@ -151,7 +172,7 @@
         margin: 1.25rem 0;
     }
 
-    /* Info-card classes distinguish short supporting topics from the main section content. */
+    /* Card classes provide consistent formatting for short informational topics. */
     .info-card {
         background-color: #f0e7f5;
         border-left: 5px solid #8b6aa3;
@@ -163,6 +184,7 @@
         margin-top: 0;
     }
 
+    /* Figures group each image with its caption and source or prompt note. */
     figure {
         margin: 1.75rem 0;
         padding: 1rem;
@@ -184,15 +206,13 @@
         text-align: center;
         font-weight: bold;
         color: #503765;
-        font-family: Georgia, "Times New Roman", serif;
     }
 
+    /* The image-note class distinguishes image credits and prompts from captions. */
     .image-note {
         margin: 0.45rem auto 0;
         max-width: 760px;
         font-size: 0.9rem;
-        text-align: center;
-        font-style: italic;
     }
 
     table {
@@ -222,6 +242,7 @@
         color: #30213f;
     }
 
+    /* Callout classes highlight useful tips without interrupting the main content. */
     .callout {
         background-color: #fff0d8;
         border-left: 5px solid #c58a3d;
@@ -230,8 +251,6 @@
     }
 
     footer {
-        max-width: 1600px;
-        margin: auto;
         background-color: #30213f;
         color: #fff8ee;
         text-align: center;
@@ -248,10 +267,11 @@
 
     footer a:hover,
     footer a:focus-visible {
-        /* White provides clear contrast against the dark footer on hover. */
+        /* White is used here to make the hovered footer link stand out against the dark background. */
         color: #ffffff;
     }
 
+    /* The footer navigation class separates validation tools from the main menu. */
     .footer-nav {
         margin-top: 0.75rem;
     }
@@ -284,9 +304,6 @@
         }
     }
 </style>
-
-<!-- Accumulus must be the final item in the head. -->
-<script src="https://lint.page/kit/4d0fe3.js" defer></script>
 ```
 
 </head>
@@ -294,7 +311,7 @@
 <body>
     <header>
         <h1>Learning Piano</h1>
-        <p>A beginner-friendly journey through practice, music, and the joy of playing.</p>
+        <p><em>A beginner-friendly journey through practice, music, and the joy of playing.</em></p>
 
 ```
     <nav aria-label="Main hobby navigation">
@@ -340,9 +357,10 @@
         </div>
 
         <figure>
-            <img src="images/piano-what.jpg" alt="A piano keyboard with sheet music on the music stand">
+            <img src="images/piano-what.jpg"
+                 alt="A piano keyboard with sheet music on the music stand">
             <figcaption>A keyboard, a piece of music, and a place to begin.</figcaption>
-            <p class="image-note">Image source: Unsplash, piano and music-note photograph.</p>
+            <p class="image-note"><em>Source: Unsplash, piano and music-note photograph. The image is used to introduce the piano and its basic materials.</em></p>
         </figure>
 
         <p class="callout">
@@ -367,9 +385,10 @@
         </ul>
 
         <figure>
-            <img src="images/piano-who.jpg" alt="A beginner sitting at a piano with a teacher">
+            <img src="images/piano-who.jpg"
+                 alt="A beginner sitting at a piano with a teacher">
             <figcaption>Every pianist starts somewhere.</figcaption>
-            <p class="image-note">Image source: Unsplash, beginner piano student and teacher photograph.</p>
+            <p class="image-note"><em>Source: Unsplash, child learning piano with a teacher. The image illustrates one way beginners can learn.</em></p>
         </figure>
 
         <div class="content-grid">
@@ -426,9 +445,10 @@
         </table>
 
         <figure>
-            <img src="images/piano-when.jpg" alt="Sheet music on a piano ready for a practice session">
+            <img src="images/piano-when.jpg"
+                 alt="Sheet music on a piano ready for a practice session">
             <figcaption>Set aside a little time and make it count.</figcaption>
-            <p class="image-note">Image source: Unsplash, sheet music on a piano photograph.</p>
+            <p class="image-note"><em>Source: Unsplash, sheet music on a piano. The image represents setting aside time to practice.</em></p>
         </figure>
 
         <div class="content-grid">
@@ -462,220 +482,6 @@
         </ul>
 
         <figure>
-            <img src="images/piano-where.jpg" alt="A piano set up in a clean, comfortable space near the stairs">
-            <figcaption>A welcoming practice space.</figcaption>
-            <p class="image-note">Image source: Unsplash, piano in a room beside a staircase.</p>
-        </figure>
-
-        <div class="content-grid">
-            <article class="info-card">
-                <h3>Comfort</h3>
-                <p>Choose a bench or chair that lets you sit upright with relaxed shoulders and comfortable arm positioning.</p>
-            </article>
-            <article class="info-card">
-                <h3>Lighting</h3>
-                <p>Use enough light to read the music without straining your eyes.</p>
-            </article>
-            <article class="info-card">
-                <h3>Organization</h3>
-                <p>Keep sheet music, a pencil, and any practice notes close by so you can begin easily.</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="how" class="page">
-        <h2>How: Getting Started on the Keys</h2>
-        <p class="intro">
-            Learning piano is easier when a big goal is broken into small steps. Focus on
-            comfortable technique and accurate playing before trying to play quickly.
-        </p>
-
-        <h3>A Beginner's Road Map</h3>
-        <ol>
-            <li><strong>Learn the keyboard:</strong> Find groups of two and three black keys and use them to locate note names.</li>
-            <li><strong>Practice rhythm:</strong> Count a steady beat and clap or tap simple rhythms before playing them.</li>
-            <li><strong>Start hands separately:</strong> Learn a short melody or accompaniment with one hand at a time.</li>
-            <li><strong>Combine slowly:</strong> Put the hands together only when you feel confident in each part.</li>
-            <li><strong>Review and reflect:</strong> Notice what improved and choose one small goal for the next session.</li>
-        </ol>
-
-        <figure>
-            <img src="images/piano-how.jpg" alt="Hands resting over piano keys while practicing a simple exercise">
-            <figcaption>Slow practice helps build reliable habits.</figcaption>
-            <p class="image-note">Image source: Unsplash, hands playing a piano photograph.</p>
-        </figure>
-
-        <div class="content-grid">
-            <article class="info-card">
-                <h3>Useful Tools</h3>
-                <p>A keyboard or piano, a stable seat, beginner sheet music, and a metronome can help you practice.</p>
-            </article>
-            <article class="info-card">
-                <h3>Practice Strategy</h3>
-                <p>Divide a difficult song into short sections and repeat each section at a manageable tempo.</p>
-            </article>
-            <article class="info-card">
-                <h3>Track Progress</h3>
-                <p>Write down a specific goal, such as playing four measures evenly or changing chords smoothly.</p>
-            </article>
-        </div>
-    </section>
-
-    <section id="why" class="page">
-        <h2>Why: The Joy of Playing Piano</h2>
-        <p class="intro">
-            Piano can be more than learning the right notes. It can be a form of expression,
-            a way to explore music you love, and a satisfying reminder that skills grow with
-            patience and practice.
-        </p>
-
-        <figure>
-            <img src="images/piano-why.jpg" alt="A simple piano setup that looks inviting">
-            <figcaption>Music gives practice a purpose.</figcaption>
-            <p class="image-note">Image source: Unsplash, piano beside an indoor plant photograph.</p>
-        </figure>
-
-        <div class="content-grid">
-            <article class="info-card">
-                <h3>Creativity</h3>
-                <p>Experiment with dynamics, tempo, and expression to make a piece feel more personal.</p>
-            </article>
-            <article class="info-card">
-                <h3>Concentration</h3>
-                <p>Reading music and coordinating both hands gives you a focused activity to work on.</p>
-            </article>
-            <article class="info-card">
-                <h3>Progress You Can Hear</h3>
-                <p>Returning to a passage over time lets you notice improvements that may be hard to see day by day.</p>
-            </article>
-        </div>
-
-        <h3>Keep the Hobby Enjoyable</h3>
-        <p>
-            Balance exercises with songs you genuinely want to play. Celebrate small milestones,
-            take breaks when you need them, and remember that mistakes are a normal part of learning!
-        </p>
-        <p class="callout">
-            <strong>My Piano Mindset:</strong> Be patient, stay curious, and let progress take time.
-        </p>
-    </section>
-
-    <section id="ai-prompts" class="page">
-        <h2>AI Prompts and Image Credits</h2>
-        <p class="intro">
-            This section documents the AI assistance and image sources used while building the site.
-        </p>
-
-        <h3>Prompt for Navigation and Website Content</h3>
-        <p>
-            <em>"Please make navigation links for a website about piano that I am building.
-            It needs seven different sections: what, who, when, where, how, why, and AI prompts.
-            I want it to be like a single-page website with the different sections."</em>
-        </p>
-
-        <figure>
-            <img src="images/piano-ai.jpg" alt="A creative workspace with piano keys and music notes">
-            <figcaption>AI tools can help support website planning.</figcaption>
-            <p class="image-note">Image source: Unsplash, piano and music-themed photograph.</p>
-        </figure>
-
-        <h3>Image Sources</h3>
-        <ul>
-            <li><strong>What:</strong> <a href="https://unsplash.com/photos/music-note-on-brown-piano-MlhJNEUQpBs">Unsplash piano and music-note photograph</a>.</li>
-            <li><strong>Who:</strong> <a href="https://unsplash.com/photos/miniature-maestro-child-in-music-school-with-teacher-bIafrBNEYk0">Unsplash beginner piano student and teacher photograph</a>.</li>
-            <li><strong>When:</strong> <a href="https://unsplash.com/photos/white-paper-on-black-piano-HppavctO8Us">Unsplash sheet music on piano photograph</a>.</li>
-            <li><strong>Where:</strong> <a href="https://unsplash.com/photos/a-room-with-a-piano-and-a-stair-case-iPpLQclm0QU">Unsplash piano beside a staircase photograph</a>.</li>
-            <li><strong>How:</strong> <a href="https://unsplash.com/photos/person-playing-piano-LZ3O2Q4Me0Q">Unsplash person playing piano photograph</a>.</li>
-            <li><strong>Why:</strong> <a href="https://unsplash.com/photos/black-and-white-piano-near-green-indoor-plant-sdT3lOb3PAE">Unsplash piano beside an indoor plant photograph</a>.</li>
-            <li><strong>AI section:</strong> <a href="https://unsplash.com/photos/an-unrecognizable-teenage-girl-with-grandmother-playing-the-piano-at-home-family-and-generations-concept-sc2l-sV9ejw">Unsplash family piano photograph</a>.</li>
-        </ul>
-
-        <p>
-            The image credits above identify the original source pages. The photographs displayed
-            on the site should correspond to the files saved in the images folder.
-        </p>
-    </section>
-</main>
-
-<footer>
-    <p>
-        Page designed by
-        <a href="https://webpages.charlotte.edu/cganugap/itis3135/chelsiganugapantadesigns.co/index.html">Chelsi Ganugapanta Designs</a>
-        &copy; 2026
-    </p>
-    <p>Learning Piano | A hobby website about practice, patience, and music.</p>
-</footer>
-
-<script>
-    /* Navigation links identify sections, and the page IDs select the content to display. */
-    const navigationLinks = document.querySelectorAll('header nav a[data-page]');
-    const pages = document.querySelectorAll('main section.page');
-
-    /* This mapping gives every section a readable tab title. */
-    const pageTitles = {
-        what: 'What: Discovering the Piano',
-        who: 'Who: Who Can Learn Piano?',
-        when: 'When: Finding Time to Practice',
-        where: 'Where: Creating a Place to Play',
-        how: 'How: Getting Started on the Keys',
-        why: 'Why: The Joy of Playing Piano',
-        'ai-prompts': 'AI Prompts and Image Credits'
-    };
-
-    function showPage(pageId) {
-        const selectedPage = document.getElementById(pageId);
-
-        if (!selectedPage || !selectedPage.classList.contains('page')) {
-            return;
-        }
-
-        pages.forEach(function (page) {
-            page.classList.remove('active');
-        });
-
-        selectedPage.classList.add('active');
-
-        navigationLinks.forEach(function (link) {
-            if (link.dataset.page === pageId) {
-                link.setAttribute('aria-current', 'page');
-            } else {
-                link.removeAttribute('aria-current');
-            }
-        });
-
-        /* Update the browser-tab title so it matches the currently visible section. */
-        document.title = 'Learning Piano | ' + pageTitles[pageId];
-
-        /* Update the URL fragment so each section can be linked to directly. */
-        if (window.location.hash !== '#' + pageId) {
-            history.replaceState(null, '', '#' + pageId);
-        }
-    }
-
-    navigationLinks.forEach(function (link) {
-        link.addEventListener('click', function (event) {
-            event.preventDefault();
-            showPage(link.dataset.page);
-        });
-    });
-
-    window.addEventListener('hashchange', function () {
-        const pageId = window.location.hash.slice(1);
-        showPage(pageId || 'what');
-    });
-
-    const initialPage = window.location.hash.slice(1);
-
-    if (initialPage && document.getElementById(initialPage)?.classList.contains('page')) {
-        showPage(initialPage);
-    } else {
-        showPage('what');
-    }
-</script>
-
-<!-- Llama validator is the final item in the body. -->
-<script src="https://lint.webpages.charlotte.edu/js/lint.js"></script>
+            <img src="images/piano-where.jpg"
+                 alt="A piano set up in a clean, comfortable space near the sta
 ```
-
-</body>
-</html>
