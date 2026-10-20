@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A personal guide to learning and playing the piano, from first notes to building a regular practice routine.">
-    <title>Learning Piano | Hobby Website</title>
+    <title>Learning Piano | What: Discovering the Piano</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
     <script src="https://lint.page/kit/4d0fe3.js" defer></script>
@@ -283,22 +283,21 @@
 <body>
     <header>
         <h1>Learning Piano</h1>
-        <p>A beginner-friendly journey through practice, music, and the joy of playing.</p>
-
+        <p><em>A beginner-friendly journey through practice, music, and the joy of playing.</em></p>
         <nav aria-label="Main hobby navigation">
-            <a href="what" data-page="what" aria-current="page">What</a>
+            <a href="#what" data-page="what" aria-current="page">What</a>
             <span class="divider" aria-hidden="true"> ♫ </span>
-            <a href="who" data-page="who">Who</a>
+            <a href="#who" data-page="who">Who</a>
             <span class="divider" aria-hidden="true"> ♫ </span>
-            <a href="when" data-page="when">When</a>
+            <a href="#when" data-page="when">When</a>
             <span class="divider" aria-hidden="true"> ♫ </span>
-            <a href="where" data-page="where">Where</a>
+            <a href="#where" data-page="where">Where</a>
             <span class="divider" aria-hidden="true"> ♫ </span>
-            <a href="how" data-page="how">How</a>
+            <a href="#how" data-page="how">How</a>
             <span class="divider" aria-hidden="true"> ♫ </span>
-            <a href="why" data-page="why">Why</a>
+            <a href="#why" data-page="why">Why</a>
             <span class="divider" aria-hidden="true"> ♫ </span>
-            <a href="ai-prompts" data-page="ai-prompts">AI Prompts</a>
+            <a href="#ai-prompts" data-page="ai-prompts">AI Prompts</a>
         </nav>
     </header>
 
@@ -582,7 +581,7 @@
 
     <footer>
         <p>
-            <p>Page designed by <a href="chelsiganugapantadesigns.co/index.html">Chelsi Ganugapanta Designs</a></p>
+            <p>Page designed by <a href="https://chelsiganugapantadesigns.co/index.html">Chelsi Ganugapanta Designs</a></p>            
             &copy; 2026
         </p>
         <p>Learning Piano | A hobby website about practice, patience, and music.</p>
@@ -617,8 +616,16 @@
                     link.removeAttribute('aria-current');
                 }
             });
+        
+
+        /* Keep browser title same as section heading. */
+
+        const heading = selectedPage.querySelector('h2');
+        if (heading) {
+            document.title = 'Learning Piano | ' + heading.textContent.trim();
         }
 
+    }
         navigationLinks.forEach(function (link) {
             link.addEventListener('click', function (event) {
                 event.preventDefault();
