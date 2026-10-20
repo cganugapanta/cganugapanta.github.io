@@ -147,7 +147,7 @@
         /* The content-grid class arranges related cards in responsive columns. */
         .content-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));            
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
             gap: 1rem;
             margin: 1.25rem 0;
         }
@@ -710,12 +710,12 @@
             }
         });
 
-        const initialPage = window.location.hash.slice(1);
-        if (initialPage && document.getElementById(initialPage)?.classList.contains('page')) {
-            showPage(initialPage);
-        } else {
-            showPage('what');
-        }
+        const initialPage = window.location.hash.slice(1); 
+        const initialPageElement = document.getElementById(initialPage); 
+        if (initialPage && initialPageElement && initialPageElement.classList.contains('page')) { 
+            showPage(initialPage); 
+        } else { 
+            showPage('what'); }
     </script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
