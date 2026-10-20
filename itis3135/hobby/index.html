@@ -86,6 +86,7 @@
             color: #30213f;
         }
 
+        /* The divider class styles decorative musical symbols between navigation links. */
         .divider {
             color: #f5d6a7;
             user-select: none;
@@ -98,10 +99,12 @@
             min-height: 60vh;
         }
 
+        /* The page class hides sections until the user selects them. */
         .page {
             display: none;
         }
 
+        /* The active class makes the selected section visible. */
         .page.active {
             display: block;
         }
@@ -141,6 +144,7 @@
             font-size: 1.1rem;
         }
 
+        /* The content-grid class arranges related cards in responsive columns. */
         .content-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
@@ -148,6 +152,7 @@
             margin: 1.25rem 0;
         }
 
+        /* The info-card class gives each related content item its own visual container. */
         .info-card {
             background-color: #f0e7f5;
             border-left: 5px solid #8b6aa3;
@@ -155,6 +160,7 @@
             padding: 1rem 1.1rem;
         }
 
+        /* The info-card class gives each related content item its own visual container. */
         .info-card h3 {
             margin-top: 0;
         }
@@ -215,6 +221,7 @@
             color: #30213f;
         }
 
+        /* The callout class emphasizes helpful tips and reminders. */
         .callout {
             background-color: #fff0d8;
             border-left: 5px solid #c58a3d;
@@ -286,22 +293,29 @@
         <p><em>A beginner-friendly journey through practice, music, and the joy of playing.</em></p>
         <nav aria-label="Main hobby navigation">
             <a href="#what" data-page="what" aria-current="page">What</a>
+            <!-- Span elements separate navigation links with decorative musical symbols. -->
             <span class="divider" aria-hidden="true"> ♫ </span>
             <a href="#who" data-page="who">Who</a>
+            <!-- Span elements separate navigation links with decorative musical symbols. -->
             <span class="divider" aria-hidden="true"> ♫ </span>
             <a href="#when" data-page="when">When</a>
+            <!-- Span elements separate navigation links with decorative musical symbols. -->
             <span class="divider" aria-hidden="true"> ♫ </span>
             <a href="#where" data-page="where">Where</a>
+            <!-- Span elements separate navigation links with decorative musical symbols. -->
             <span class="divider" aria-hidden="true"> ♫ </span>
             <a href="#how" data-page="how">How</a>
+            <!-- Span elements separate navigation links with decorative musical symbols. -->
             <span class="divider" aria-hidden="true"> ♫ </span>
             <a href="#why" data-page="why">Why</a>
+            <!-- Span elements separate navigation links with decorative musical symbols. -->
             <span class="divider" aria-hidden="true"> ♫ </span>
             <a href="#ai-prompts" data-page="ai-prompts">AI Prompts</a>
         </nav>
     </header>
 
     <main>
+        <!-- Section IDs connect the navigation links to the corresponding content sections. -->
         <section id="what" class="page active">
             <h2>What: Discovering the Piano</h2>
             <p class="intro">
@@ -311,6 +325,7 @@
                 work toward songs theyenjoy.
             </p>
 
+            <!-- The content-grid div groups related cards into a CSS grid. -->
             <div class="content-grid">
                 <article class="info-card">
                     <h3>Learn the Basics</h3>
@@ -338,6 +353,7 @@
             </p>
         </section>
 
+        <!-- Section IDs connect the navigation links to the corresponding content sections. -->
         <section id="who" class="page">
             <h2>Who: Who Can Learn Piano?</h2>
             <p class="intro">
@@ -359,6 +375,7 @@
                 <figcaption>Every pianist starts somewhere.</figcaption>
             </figure>
 
+            <!-- The content-grid div groups related cards into a CSS grid. -->
             <div class="content-grid">
                 <article class="info-card">
                     <h3>Beginners</h3>
@@ -375,6 +392,7 @@
             </div>
         </section>
 
+        <!-- Section IDs connect the navigation links to the corresponding content sections. -->
         <section id="when" class="page">
             <h2>When: Finding Time to Practice</h2>
             <p class="intro">
@@ -418,6 +436,7 @@
                 <figcaption>Set aside a little time and make it count.</figcaption>
             </figure>
 
+            <!-- The content-grid div groups related cards into a CSS grid. -->
             <div class="content-grid">
                 <article class="info-card">
                     <h3>Before School or Work</h3>
@@ -434,6 +453,7 @@
             </div>
         </section>
 
+        <!-- Section IDs connect the navigation links to the corresponding content sections. -->
         <section id="where" class="page">
             <h2>Where: Creating a Place to Play</h2>
             <p class="intro">
@@ -454,6 +474,7 @@
                 <figcaption>A welcoming practice space.</figcaption>
             </figure>
 
+            <!-- The content-grid div groups related cards into a CSS grid. -->
             <div class="content-grid">
                 <article class="info-card">
                     <h3>Comfort</h3>
@@ -470,6 +491,7 @@
             </div>
         </section>
 
+        <!-- Section IDs connect the navigation links to the corresponding content sections. -->
         <section id="how" class="page">
             <h2>How: Getting Started on the Keys</h2>
             <p class="intro">
@@ -492,6 +514,7 @@
                 <figcaption>Slow practice helps build reliable habits.</figcaption>
             </figure>
 
+            <!-- The content-grid div groups related cards into a CSS grid. -->
             <div class="content-grid">
                 <article class="info-card">
                     <h3>Useful Tools</h3>
@@ -508,6 +531,7 @@
             </div>
         </section>
 
+        <!-- Section IDs connect the navigation links to the corresponding content sections. -->
         <section id="why" class="page">
             <h2>Why: The Joy of Playing Piano</h2>
             <p class="intro">
@@ -522,6 +546,7 @@
                 <figcaption>Music gives practice a purpose.</figcaption>
             </figure>
 
+            <!-- The content-grid div groups related cards into a CSS grid. -->
             <div class="content-grid">
                 <article class="info-card">
                     <h3>Creativity</h3>
@@ -547,6 +572,7 @@
             </p>
         </section>
 
+        <!-- Section IDs connect the navigation links to the corresponding content sections. -->
         <section id="ai-prompts" class="page">
             <h2>AI Prompts and Image Credits</h2>
             <p class="intro">
