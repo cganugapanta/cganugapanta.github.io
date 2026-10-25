@@ -5,13 +5,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Survey</title>
     <link rel="stylesheet" href="styles/default.css">
+
+    
+    <style>
+        .survey-page {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 12px;
+        }
+
+        .survey-page h2,
+        .survey-page h3 {
+            color: #234d32;
+        }
+
+        .survey-intro {
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .survey-form label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .survey-form input[type="text"],
+        .survey-form input[type="email"],
+        .survey-form select,
+        .survey-form textarea {
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 100%;
+            padding: 11px;
+            border: 1px solid #777777;
+            border-radius: 5px;
+            font: inherit;
+        }
+
+        .survey-form fieldset {
+            margin-top: 22px;
+            padding: 15px;
+            border: 1px solid #aab9a7;
+            border-radius: 8px;
+        }
+
+        .survey-form legend {
+            padding: 0 6px;
+            font-weight: bold;
+            color: #234d32;
+        }
+
+        .survey-form fieldset label {
+            margin: 10px 0;
+            font-weight: normal;
+        }
+
+        .survey-form input[type="radio"],
+        .survey-form input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        .survey-form button {
+            margin-top: 25px;
+            padding: 12px 24px;
+            background-color: #234d32;
+            color: #ffffff;
+            border: none;
+            border-radius: 6px;
+            font: inherit;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .survey-form button:hover {
+            background-color: #163522;
+        }
+
+        .survey-form input:focus-visible,
+        .survey-form select:focus-visible,
+        .survey-form textarea:focus-visible,
+        .survey-form button:focus-visible {
+            outline: 3px solid #8a4b20;
+            outline-offset: 3px;
+        }
+
+        .survey-note {
+            margin-top: 20px;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
+
 <body>
 
     <include src="components/header.html"></include>
 
     <main>
-        <h2>Survey Form</h2>
+        <main class="survey-page">
+        <h2>Green Gazelle Goods | Customer Feedback Survey</h2>
+
+        <p class="survey-intro">
+            Welcome to Green Gazelle Goods! We believe that small,
+            everyday choices can make sustainable living easier.
+            Tell us about your shopping preferences so we can improve
+            our products and your experience.
+        </p>
+
+        <h3>Tell Us About Yourself</h3>
+
+        <form class="survey-form" action="#" method="get">
+            <label for="customer-name">Full Name:</label>
+            <input
+                type="text"
+                id="customer-name"
+                name="customer-name"
+                autocomplete="name"
+                required
+            >
+
+            <label for="customer-email">Email Address:</label>
+            <input
+                type="email"
+                id="customer-email"
+                name="customer-email"
+                autocomplete="email"
+                required
+            >
+
+            <label for="age-range">Which age range are you in?</label>
+            <select id="age-range" name="age-range">
+                <option value="">Select an age range</option>
+                <option value="under-18">Under 18</option>
+                <option value="18-24">18–24</option>
+                <option value="25-34">25–34</option>
+                <option value="35-44">35–44</option>
+                <option value="45-plus">45 or older</option>
+                <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
+
+            <fieldset>
+                <legend>How often do you shop for sustainable products?</legend>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="shopping-frequency"
+                        value="weekly"
+                    >
+                    Weekly
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="shopping-frequency"
+                        value="monthly"
+                    >
+                    Monthly
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="shopping-frequency"
+                        value="occasionally"
+                    >
+                    Occasionally
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="shopping-frequency"
+                        value="new"
+                    >
+                    I'm just getting started!
+                </label>
+            </fieldset>
+
+            <label for="favorite-category">
+                Which product category interests you most?
+            </label>
+
+            <select id="favorite-category" name="favorite-category">
+                <option value="">Choose a category</option>
+                <option value="drinkware">Reusable Drinkware</option>
+                <option value="kitchen">Kitchen Products</option>
+                <option value="personal-care">Personal Care</option>
+                <option value="accessories">Everyday Accessories</option>
+                <option value="all">All of the Above</option>
+            </select>
+
+            <fieldset>
+                <legend>What matters most when choosing a product?</legend>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="priorities"
+                        value="durability"
+                    >
+                    Durability
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="priorities"
+                        value="price"
+                    >
+                    Affordable Pricing
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="priorities"
+                        value="materials"
+                    >
+                    Materials and Packaging
+                </label>
+
+                <label>
+                    <input
+                        type="checkbox"
+                        name="priorities"
+                        value="design"
+                    >
+                    Design and Appearance
+                </label>
+            </fieldset>
+
+            <label for="feedback">
+                What products would you like us to offer?
+            </label>
+
+            <textarea
+                id="feedback"
+                name="feedback"
+                rows="5"
+                placeholder="Share your ideas with us..."
+            ></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+
+        <p class="survey-note">
+            Thank you for helping Green Gazelle Goods make sustainable
+            shopping more convenient!
+        </p>
     </main>
 
     <include src="components/footer.html"></include>
