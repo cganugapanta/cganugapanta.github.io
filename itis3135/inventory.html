@@ -5,19 +5,229 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Inventory</title>
     <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        .inventory-page {
+            max-width: 1050px;
+            margin: 30px auto;
+            padding: 25px;
+        }
+
+        .inventory-page h2,
+        .inventory-page h3 {
+            color: #234d32;
+        }
+
+        .inventory-intro {
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .inventory-summary {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            padding: 20px;
+            background-color: #e4efe1;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .summary-card h3 {
+            margin-top: 0;
+        }
+
+        .summary-card p {
+            margin-bottom: 0;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        .inventory-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #ffffff;
+        }
+
+        .inventory-table caption {
+            padding: 12px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .inventory-table th,
+        .inventory-table td {
+            padding: 14px;
+            border: 1px solid #c8d4c5;
+            text-align: left;
+        }
+
+        .inventory-table thead {
+            background-color: #234d32;
+            color: #ffffff;
+        }
+
+        .inventory-table tbody tr:nth-child(even) {
+            background-color: #f0f5ed;
+        }
+
+        .inventory-table tbody tr:hover {
+            background-color: #e4efe1;
+        }
+
+        .stock-available {
+            font-weight: bold;
+            color: #234d32;
+        }
+
+        .inventory-note {
+            margin-top: 25px;
+            padding: 18px;
+            background-color: #ffffff;
+            border-left: 5px solid #39734d;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+            .inventory-summary {
+                grid-template-columns: 1fr;
+            }
+
+            .inventory-table th,
+            .inventory-table td {
+                padding: 9px;
+            }
+        }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <include src="components/header.html"></include>
 
-    <main>
-        <h2>Inventory</h2>
+    <main class="inventory-page">
+        <h2>Green Gazelle Goods | Product Inventory</h2>
+
+        <p class="inventory-intro">
+            Welcome to our inventory dashboard! This page provides
+            an overview of the everyday essentials offered by
+            Green Gazelle Goods. Explore our product categories,
+            prices, and current stock levels.
+        </p>
+
+        <section class="inventory-summary" aria-label="Inventory summary">
+            <div class="summary-card">
+                <h3>6</h3>
+                <p>Products Listed</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>4</h3>
+                <p>Product Categories</p>
+            </div>
+
+            <div class="summary-card">
+                <h3>178</h3>
+                <p>Total Units in Stock</p>
+            </div>
+        </section>
+
+        <h3>Available Products</h3>
+
+        <div class="table-wrapper">
+            <table class="inventory-table">
+                <caption>Green Gazelle Goods Product Catalog</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Product ID</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Category</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Stock</th>
+                        <th scope="col">Availability</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>GG001</td>
+                        <td>Reusable Water Bottle</td>
+                        <td>Drinkware</td>
+                        <td>$18.00</td>
+                        <td>24</td>
+                        <td class="stock-available">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>GG002</td>
+                        <td>Everyday Shopping Bag</td>
+                        <td>Accessories</td>
+                        <td>$8.00</td>
+                        <td>32</td>
+                        <td class="stock-available">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>GG003</td>
+                        <td>Bamboo Toothbrush</td>
+                        <td>Personal Care</td>
+                        <td>$4.00</td>
+                        <td>50</td>
+                        <td class="stock-available">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>GG004</td>
+                        <td>Lunch Container</td>
+                        <td>Kitchen</td>
+                        <td>$22.00</td>
+                        <td>15</td>
+                        <td class="stock-available">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>GG005</td>
+                        <td>Reusable Coffee Cup</td>
+                        <td>Drinkware</td>
+                        <td>$14.00</td>
+                        <td>27</td>
+                        <td class="stock-available">In Stock</td>
+                    </tr>
+
+                    <tr>
+                        <td>GG006</td>
+                        <td>Portable Cutlery Set</td>
+                        <td>Accessories</td>
+                        <td>$12.00</td>
+                        <td>30</td>
+                        <td class="stock-available">In Stock</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="inventory-note">
+            <h3>Our Inventory Approach</h3>
+
+            <p>
+                We aim to offer practical products that fit into
+                everyday routines. Our inventory helps customers
+                compare options and explore reusable alternatives
+                for common household and personal-care needs.
+            </p>
+        </section>
     </main>
 
     <include src="components/footer.html"></include>
     <script src="https://unpkg.com/htmlincludejs"></script>
     
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>
