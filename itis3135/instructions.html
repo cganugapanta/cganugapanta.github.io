@@ -5,19 +5,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Instructions</title>
     <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        .documentation-page {
+            max-width: 1050px;
+            margin: 30px auto;
+            padding: 25px;
+        }
+
+        .documentation-page h2,
+        .documentation-page h3 {
+            color: #234d32;
+        }
+
+        .documentation-intro {
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .documentation-layout {
+            display: grid;
+            grid-template-columns: 250px minmax(0, 1fr);
+            gap: 30px;
+            align-items: start;
+        }
+
+        .documentation-nav {
+            padding: 20px;
+            background-color: #e4efe1;
+            border-radius: 10px;
+        }
+
+        .documentation-nav h3 {
+            margin-top: 0;
+        }
+
+        .documentation-nav ul {
+            padding-left: 20px;
+        }
+
+        .documentation-nav li {
+            margin-bottom: 12px;
+        }
+
+        .documentation-nav a {
+            color: #234d32;
+        }
+
+        .documentation-content {
+            min-width: 0;
+            padding: 25px;
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .documentation-content section {
+            margin-bottom: 35px;
+            line-height: 1.8;
+            scroll-margin-top: 20px;
+        }
+
+        .documentation-content section:last-child {
+            margin-bottom: 0;
+        }
+
+        .documentation-content li {
+            margin-bottom: 8px;
+        }
+
+        .documentation-content h3 {
+            border-bottom: 2px solid #d5e0d3;
+            padding-bottom: 8px;
+        }
+
+        @media (max-width: 750px) {
+            .documentation-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" defer></script>
 </head>
 <body>
 
     <include src="components/header.html"></include>
 
-    <main>
-        <h2>Instructions</h2>
+    <main class="documentation-page">
+        <h2>Green Gazelle Goods | Sustainable Living Guide</h2>
+
+        <p class="documentation-intro">
+            Sustainable living can begin with small decisions.
+            This guide introduces practical ways to think about
+            everyday purchases, reusable products, and habits
+            that may help reduce unnecessary waste.
+        </p>
+
+        <div class="documentation-layout">
+            <nav class="documentation-nav" aria-label="Guide contents">
+                <h3>Guide Contents</h3>
+
+                <ul>
+                    <li>
+                        <a href="#introduction">Introduction</a>
+                    </li>
+
+                    <li>
+                        <a href="#plastic-waste">Reducing Plastic Waste</a>
+                    </li>
+
+                    <li>
+                        <a href="#reusable-products">Reusable Products</a>
+                    </li>
+
+                    <li>
+                        <a href="#shopping">Sustainable Shopping</a>
+                    </li>
+
+                    <li>
+                        <a href="#product-care">Caring for Products</a>
+                    </li>
+
+                    <li>
+                        <a href="#getting-started">Getting Started</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="documentation-content">
+                <section id="introduction">
+                    <h3>1. Introduction</h3>
+
+                    <p>
+                        Sustainable living involves considering how
+                        everyday activities affect the environment.
+                        There is no single approach that works for
+                        everyone, but making thoughtful decisions
+                        can be a useful starting point.
+                    </p>
+
+                    <p>
+                        Green Gazelle Goods focuses on practical
+                        everyday products that encourage people to
+                        explore reusable alternatives.
+                    </p>
+                </section>
+
+                <section id="plastic-waste">
+                    <h3>2. Reducing Plastic Waste</h3>
+
+                    <p>
+                        Many common routines involve disposable
+                        packaging and single-use items. Reconsidering
+                        these habits can help reduce the amount of
+                        waste a household produces.
+                    </p>
+
+                    <p>Some ideas to consider include:</p>
+
+                    <ul>
+                        <li>Carrying a reusable shopping bag.</li>
+                        <li>Using a refillable water bottle.</li>
+                        <li>Choosing products with less packaging when practical.</li>
+                        <li>Checking local recycling guidelines.</li>
+                    </ul>
+                </section>
+
+                <section id="reusable-products">
+                    <h3>3. Reusable Products</h3>
+
+                    <p>
+                        Reusable products are designed to be used
+                        multiple times rather than discarded after
+                        a single use. Examples include shopping
+                        bags, drinkware, lunch containers, and
+                        portable utensils.
+                    </p>
+
+                    <p>
+                        When comparing reusable products, consider
+                        durability, cleaning requirements, materials,
+                        cost, and how frequently you expect to use them.
+                        Reuse is most useful when an item is actually
+                        used repeatedly and maintained properly.
+                    </p>
+                </section>
+
+                <section id="shopping">
+                    <h3>4. Sustainable Shopping</h3>
+
+                    <p>
+                        Thoughtful shopping starts with identifying
+                        what you need before making a purchase.
+                        Buying fewer unnecessary items can be a
+                        practical way to manage both spending and
+                        household waste.
+                    </p>
+
+                    <ol>
+                        <li>Consider whether you already own something similar.</li>
+                        <li>Compare the durability of available options.</li>
+                        <li>Read product care and material information.</li>
+                        <li>Choose products that fit your everyday routine.</li>
+                        <li>Consider repair, reuse, or secondhand options when appropriate.</li>
+                    </ol>
+                </section>
+
+                <section id="product-care">
+                    <h3>5. Caring for Your Products</h3>
+
+                    <p>
+                        Cleaning and maintaining products according
+                        to their instructions can help them remain
+                        useful for longer.
+                    </p>
+
+                    <ul>
+                        <li>Follow the manufacturer's cleaning instructions.</li>
+                        <li>Allow reusable containers to dry properly.</li>
+                        <li>Inspect products for wear or damage.</li>
+                        <li>Repair items when it is practical and safe to do so.</li>
+                    </ul>
+                </section>
+
+                <section id="getting-started">
+                    <h3>6. Getting Started</h3>
+
+                    <p>
+                        You do not need to change every habit at once.
+                        Start with one routine that is easy to maintain,
+                        such as bringing a reusable bottle or keeping
+                        a shopping bag near your everyday belongings.
+                    </p>
+
+                    <p>
+                        Over time, you can explore additional changes
+                        that fit your needs, budget, and lifestyle.
+                        The goal is to develop practical habits that
+                        work for you.
+                    </p>
+                </section>
+            </div>
+        </div>
     </main>
 
     <include src="components/footer.html"></include>
     <script src="https://unpkg.com/htmlincludejs"></script>
     
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>
