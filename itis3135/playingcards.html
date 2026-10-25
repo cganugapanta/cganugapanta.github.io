@@ -3,21 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Playing Cards</title>
+    <title>Featured Products | Green Gazelle Goods</title>
     <link rel="stylesheet" href="styles/default.css">
+
+    <style>
+        .cards-page {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 25px;
+        }
+
+        .cards-page h2,
+        .cards-page h3 {
+            color: #234d32;
+        }
+
+        .cards-intro {
+            max-width: 750px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .product-card {
+            overflow: hidden;
+            background-color: #ffffff;
+            border: 1px solid #d5e0d3;
+            border-radius: 12px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .product-card img {
+            display: block;
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .product-card-content {
+            padding: 18px;
+        }
+
+        .product-card h3 {
+            margin-top: 0;
+        }
+
+        .product-card p {
+            line-height: 1.6;
+        }
+
+        .product-tag {
+            display: inline-block;
+            padding: 5px 9px;
+            background-color: #e4efe1;
+            color: #234d32;
+            border-radius: 15px;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 800px) {
+            .product-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 520px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <script src="https://lint.page/kit/4d0fe3.js" defer></script>
 </head>
 <body>
+    <div data-include="components/header.html"></div>
 
-    <include src="components/header.html"></include>
+    <main class="cards-page">
+        <h2>Green Gazelle Goods | Our Featured Products</h2>
 
-    <main>
-        <h2>Playing Cards</h2>
+        <p class="cards-intro">
+            Meet a few of our favorite everyday essentials!
+            Green Gazelle Goods brings together practical products
+            designed for people who want to make more thoughtful
+            choices in their daily routines.
+        </p>
+
+        <div class="product-grid">
+            <article class="product-card">
+                <img
+                    src="images/green-gazelle/water-bottle.jpg"
+                    alt="Reusable water bottle"
+                    loading="lazy"
+                >
+
+                <div class="product-card-content">
+                    <span class="product-tag">Drinkware</span>
+                    <h3>Reusable Water Bottle</h3>
+
+                    <p>
+                        A convenient companion for classes, work,
+                        travel, and everyday adventures.
+                    </p>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="images/green-gazelle/shopping-bag.jpg"
+                    alt="Reusable shopping bag"
+                    loading="lazy"
+                >
+
+                <div class="product-card-content">
+                    <span class="product-tag">Accessories</span>
+                    <h3>Everyday Shopping Bag</h3>
+
+                    <p>
+                        Carry groceries, books, and daily essentials
+                        in a reusable bag that's easy to bring along.
+                    </p>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="images/green-gazelle/bamboo-toothbrush.jpg"
+                    alt="Bamboo toothbrush"
+                    loading="lazy"
+                >
+
+                <div class="product-card-content">
+                    <span class="product-tag">Personal Care</span>
+                    <h3>Bamboo Toothbrush</h3>
+
+                    <p>
+                        A simple personal-care alternative for
+                        shoppers exploring different materials.
+                    </p>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="images/green-gazelle/lunch-container.jpg"
+                    alt="Reusable stainless steel lunch container"
+                    loading="lazy"
+                >
+
+                <div class="product-card-content">
+                    <span class="product-tag">Kitchen</span>
+                    <h3>Lunch Container</h3>
+
+                    <p>
+                        Pack lunch, snacks, or leftovers in a
+                        reusable container for busy days.
+                    </p>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="images/green-gazelle/coffee-cup.jpg"
+                    alt="Reusable coffee cup"
+                    loading="lazy"
+                >
+
+                <div class="product-card-content">
+                    <span class="product-tag">Drinkware</span>
+                    <h3>Reusable Coffee Cup</h3>
+
+                    <p>
+                        Enjoy your favorite warm drink at home,
+                        on campus, or during your morning commute.
+                    </p>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <img
+                    src="images/green-gazelle/cutlery-set.jpg"
+                    alt="Reusable cutlery set"
+                    loading="lazy"
+                >
+
+                <div class="product-card-content">
+                    <span class="product-tag">Everyday Essentials</span>
+                    <h3>Portable Cutlery Set</h3>
+
+                    <p>
+                        Keep reusable utensils handy for packed
+                        lunches, picnics, and meals on the go.
+                    </p>
+                </div>
+            </article>
+        </div>
     </main>
 
-    <include src="components/footer.html"></include>
+
+    <div data-include="components/footer.html"></div>
     <script src="https://unpkg.com/htmlincludejs"></script>
     
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>
