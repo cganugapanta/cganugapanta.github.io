@@ -18,7 +18,7 @@ header, footer {
 
 h1, h2, h3 {
     /* Secondary heading font */
-    font-family: "Open Sans", Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Calibri", "Candara", Segoe, optima, sans-serif;
 }
 
 header h1 {
