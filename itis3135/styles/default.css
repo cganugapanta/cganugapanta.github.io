@@ -2,7 +2,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f4f8; /* Soft slate-tinted off-white */
     color: #1a2530;            /* Dark charcoal, not pure black */
-    margin: 0;
+    max-width: 1100px;
+    margin: 0 auto;
     padding: 16px;
     line-height: 1.6;
 }
@@ -15,6 +16,11 @@ header, footer {
     border-radius: 6px;
 }
 
+h1, h2, h3 {
+    /* Secondary heading font */
+    font-family: Montserrat, "Arial Black", sans-serif;
+}
+
 header h1 {
     margin: 0 0 10px 0;
     font-size: 1.8rem;
@@ -25,13 +31,16 @@ nav {
 }
 
 /* Hyperlinks: No default browser blue or purple */
-a:link {
+
+a:link,
+a:visited {
     color: #1b7a5a;
-    font-weight: 600;
+    text-decoration: underline;
 }
 
-a:visited {
-    color: #11533d;
+a:hover,
+a:hover:visited {
+    color: #234d32;
 }
 
 header nav a:link,
