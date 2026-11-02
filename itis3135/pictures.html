@@ -99,36 +99,33 @@
 
         <p>
             The purpose of this page is to explore how digital images
-            work on the web. By using two different photographs, I will
-            demonstrate the differences between image formats, image
+            work on the web. By using two different pictures, I will
+            show the differences between image formats, image
             dimensions, file sizes, and image quality. I will also
             compare resizing images with CSS to resizing the actual
-            image file in an image editor. Finally, I will demonstrate
+            image file in an image editor. Finally, I will show
             how changing an image's proportions can distort its
             appearance and how enlarging a small image can reduce
             its visible quality.
         </p>
 
-        <!-- ===================================================== -->
-        <!-- SECTION 1: PEXELS PHOTOGRAPH                          -->
-        <!-- ===================================================== -->
+        <!-- SECTION 1: PEXELS PIC       -->
 
         <section class="picture-section">
             <h3>
-                Exploring Image Formats and Resizing with a Pexels Photograph
+                Exploring Image Formats and Resizing with a Pexels Picture
             </h3>
 
             <p>
-                I selected this photograph from Pexels because its
+                I chose this picture from Pexels because its
                 colors and fine details make it useful for comparing
-                image formats and image quality. The photograph was
-                taken by [PHOTOGRAPHER NAME], whose other photographs
+                image formats and image quality. The picture was
+                taken by Tobias Eicher, whose other pictures
                 can be explored on Pexels. The image depicts
-                [DESCRIBE WHAT APPEARS IN YOUR PHOTOGRAPH].
-                The original file is [FORMAT], measuring
-                [ORIGINAL WIDTH] by [ORIGINAL HEIGHT] pixels, with a
-                file size of [ORIGINAL FILE SIZE]. Throughout this
-                section, I will compare the original photograph with
+                a landscape with mountains and trees in the foreground.
+                The original file is JPG, measuring 6024x4024 pixels, with a
+                file size of 4.39 MB. Throughout this
+                section, I will compare the original picture with
                 converted, resized, distorted, and enlarged versions.
             </p>
 
@@ -138,23 +135,23 @@
                 <h4>Original Image</h4>
 
                 <p>
-                    The original photograph is the starting point for
+                    The original picture is the starting point for
                     all the demonstrations in this section. The
                     original file is preserved so that the other
                     versions can be compared against it.
                 </p>
 
                 <p class="image-information">
-                    Original dimensions: [WIDTH] × [HEIGHT] pixels.
-                    Original format: [FORMAT].
-                    Original file size: [FILE SIZE].
-                    Photographer: [PHOTOGRAPHER NAME].
+                    Original dimensions: 6024 × 4024 pixels.
+                    Original format: JPG.
+                    Original file size: 4.39 MB.
+                    Photographer: Tobias Eicher.
                     Source: Pexels.
                 </p>
 
                 <div class="format-links">
                     <a
-                        href="images/pexels-original.jpg"
+                        href="images/pexels-tobias-eicher-original.jpg"
                         target="_blank"
                         rel="noopener"
                     >
@@ -190,13 +187,13 @@
                 <div class="image-row">
                     <figure>
                         <img
-                            src="images/pexels-original.jpg"
+                            src="images/pexels-tobias-eicher-original.jpg"
                             alt="Original full-color Pexels photograph"
                             class="large-example"
                             style="width: 280px; height: auto;"
                         >
                         <figcaption>
-                            Original photograph in its original format.
+                            Original picture in its original format.
                         </figcaption>
                     </figure>
 
@@ -207,8 +204,7 @@
                             style="width: 280px; height: auto;"
                         >
                         <figcaption>
-                            GIF conversion, which may lose color detail
-                            because of its limited color palette.
+                            GIF conversion.
                         </figcaption>
                     </figure>
 
@@ -219,7 +215,7 @@
                             style="width: 280px; height: auto;"
                         >
                         <figcaption>
-                            Grayscale version containing shades of gray
+                            Grayscale version with shades of gray
                             instead of the original colors.
                         </figcaption>
                     </figure>
@@ -241,12 +237,12 @@
                 <p>
                     JPEG is commonly used for photographs because it
                     supports lossy compression and can reduce file
-                    sizes considerably. GIF supports a limited color
+                    sizes. GIF has a limited color
                     palette, which can reduce the detail in a
-                    photograph. Grayscale images retain brightness
+                    picture. Grayscale images retain brightness
                     information without color, while a threshold-based
                     black-and-white image contains only black and
-                    white pixels. The resulting file sizes depend on
+                    white pixels. The final file sizes depend on
                     the image content, dimensions, format, and
                     compression settings.
                 </p>
@@ -267,7 +263,7 @@
                 <figure>
 
                     <img
-                        src="images/pexels-original.jpg"
+                        src="images/pexels-600x401.jpg"
                         alt="Original Pexels photograph displayed at a smaller size using CSS"
                         style="width: 600px; max-width: 100%; height: auto;"
                     >
@@ -301,19 +297,19 @@
                     using CSS. The image editor reduced the actual
                     pixel dimensions while preserving the original
                     aspect ratio. The resulting file is approximately
-                    600 pixels wide and 360 pixels tall.
+                    600 pixels wide and 401 pixels tall.
                 </p>
 
                 <figure>
 
                     <img
-                        src="images/pexels-600x360.jpg"
-                        alt="Pexels photograph properly resized to 600 by 360 pixels"
+                        src="images/pexels-600x401.jpg"
+                        alt="Pexels photograph properly resized to 600 by 401 pixels"
                         style="width: 600px; max-width: 100%; height: auto;"
                     >
 
                     <figcaption>
-                        Photograph resized to 600 × 360 pixels in
+                        Photograph resized to 600 × 401 pixels in
                         an image editor while maintaining its
                         original proportions.
                     </figcaption>
@@ -339,7 +335,7 @@
                     height are changed independently. The following
                     examples use the properly resized image but
                     deliberately set incorrect CSS dimensions.
-                    The original resized image is 600 × 360 pixels.
+                    The original resized image is 600 × 401 pixels.
                     Each example keeps one dimension the same while
                     changing the other dimension.
                 </p>
@@ -347,15 +343,15 @@
                 <div class="image-row">
                     <figure>
                         <img
-                            src="images/pexels-600x360.jpg"
+                            src="images/pexels-600x267-distorted-horizontal-1.jpg"
                             alt="Pexels photograph compressed vertically using CSS"
-                            style="width: 600px; height: 240px;"
+                            style="width: 600px; height: 267px;"
                         >
 
                         <figcaption>
                             Distortion 1: The width remains
                             600 pixels, but the height is reduced
-                            to 240 pixels, compressing the image
+                            to 267 pixels, compressing the image
                             vertically.
                         </figcaption>
 
@@ -364,15 +360,15 @@
                     <figure>
 
                         <img
-                            src="images/pexels-600x360.jpg"
+                            src="images/pexels-600x200-distorted-horizontal-2.jpg"
                             alt="Pexels photograph compressed vertically even further using CSS"
-                            style="width: 600px; height: 160px;"
+                            style="width: 600px; height: 200px;"
                         >
 
                         <figcaption>
                             Distortion 2: The width remains
                             600 pixels, but the height is reduced
-                            further to 160 pixels.
+                            further to 200 pixels.
                         </figcaption>
 
                     </figure>
@@ -380,14 +376,14 @@
                     <figure>
 
                         <img
-                            src="images/pexels-600x360.jpg"
+                            src="images/pexels-400x401-distorted-vertical-1.jpg"
                             alt="Pexels photograph compressed horizontally using CSS"
-                            style="width: 400px; height: 360px;"
+                            style="width: 400px; height: 401px;"
                         >
 
                         <figcaption>
-                            Distortion 3: The height remains
-                            360 pixels, but the width is reduced
+                            Distortion 3: The height is
+                            401 pixels, and the width is reduced
                             to 400 pixels, compressing the image
                             horizontally.
                         </figcaption>
@@ -396,22 +392,29 @@
 
                     <figure>
                         <img
-                            src="images/pexels-600x360.jpg"
+                            src="images/pexels-267x401-distorted-horizontal-2.jpg"
                             alt="Pexels photograph compressed horizontally even further using CSS"
-                            style="width: 267px; height: 360px;"
+                            style="width: 267px; height: 401px;"
                         >
                         <figcaption>
-                            Distortion 4: The height remains
-                            360 pixels, but the width is reduced
+                            Distortion 4: The height is
+                            401 pixels, and the width is reduced
                             further to 267 pixels.
                         </figcaption>
                     </figure>
                 </div>
                 <p>
                     These examples show why the aspect ratio must
-                    be preserved when resizing photographs for
+                    be the same when resizing photographs for
                     websites. When both dimensions are set
-                    independently, recognizable objects can appear
+                    separately, recognizable objects can appear
+                    unnaturally short, tall, narrow, or wide.
+                </p>
+                <p>
+                    These examples show why the aspect ratio must
+                    be the same when resizing photographs for
+                    websites. When both dimensions are set
+                    separately, recognizable objects can appear
                     unnaturally short, tall, narrow, or wide.
                     Using a width with height set to auto is
                     generally a safer way to resize an image
@@ -436,13 +439,13 @@
                 <div class="image-row">
                     <figure>
                         <img
-                            src="images/pexels-600x360.jpg"
+                            src="images/pexels-600x401.jpg"
                             alt="Properly resized Pexels photograph displayed at 600 pixels wide"
                             style="width: 600px; max-width: 100%; height: auto;"
                         >
 
                         <figcaption>
-                            Reference image: 600 × 360 pixels,
+                            Reference image: 600 × 401 pixels,
                             displayed at 600 pixels wide.
                         </figcaption>
                     </figure>
@@ -450,13 +453,13 @@
                     <figure>
 
                         <img
-                            src="images/pexels-150x90.jpg"
+                            src="images/pexels-150x100.jpg"
                             alt="Small Pexels photograph enlarged to 600 pixels wide"
                             style="width: 600px; max-width: 100%; height: auto;"
                         >
 
                         <figcaption>
-                            Reduced image: 150 × 90 pixels,
+                            Reduced image: 150 × 100 pixels,
                             enlarged to 600 pixels wide. The
                             smaller source image may show less
                             detail and more visible pixelation.
@@ -479,25 +482,21 @@
         </section>
         <hr>
 
-        <!-- ===================================================== -->
         <!-- SECTION 2: PERSONAL GEOMETRY PHOTOGRAPH               -->
-        <!-- ===================================================== -->
 
         <section class="picture-section">
             <h3>
-                Exploring Image Proportions with My Personal Geometry Photograph
+                Exploring Image Proportions with My Personal Geometry Picture
             </h3>
 
             <p>
-                This photograph was taken by me and contains a
-                circular or square object alongside part of my body.
-                I selected this photograph because the object's
-                recognizable geometric shape makes it easier to
+                This picture was taken by me and has my hand holding a plate.
+                I selected this because the plate makes it easier to
                 identify changes in proportions. Unlike the Pexels
-                photograph, this image is my own photograph. The
-                original file is [FORMAT], measuring [ORIGINAL WIDTH]
-                by [ORIGINAL HEIGHT] pixels, with a file size of
-                [ORIGINAL FILE SIZE]. I will use the photograph to
+                photograph, this image is my own. The
+                original file is PNG, measuring 2243x2209
+                pixels, with a file size of 2.14 MB.
+                I will use the picture to
                 demonstrate how image conversions, resizing, and
                 stretching affect a recognizable shape.
             </p>
@@ -508,22 +507,21 @@
                 <h4>Original Image</h4>
 
                 <p>
-                    This is my original photograph of a geometric
-                    object next to part of my body. The original
-                    image is preserved so that its proportions can
+                    This is my original picture of a my hand holding a plate. 
+                    The original image is shown so that its proportions can
                     be compared with the modified versions.
                 </p>
 
                 <p class="image-information">
-                    Original dimensions: [WIDTH] × [HEIGHT] pixels.
-                    Original format: [FORMAT].
-                    Original file size: [FILE SIZE].
-                    Photographer: Me.
+                    Original dimensions: 2243 × 2209 pixels.
+                    Original format: PNG.
+                    Original file size: 2.14 MB.
+                    Photographer: Chelsi Ganugapanta.
                 </p>
 
                 <div class="format-links">
                     <a
-                        href="images/personal-original.jpg"
+                        href="images/hand-holding-plate-original@chelsig.png"
                         target="_blank"
                         rel="noopener"
                     >
@@ -531,7 +529,7 @@
                     </a>
 
                     <a
-                        href="images/personal-original.gif"
+                        href="images/hand-holding-plate@chelsig.gif"
                         target="_blank"
                         rel="noopener"
                     >
@@ -539,7 +537,7 @@
                     </a>
 
                     <a
-                        href="images/personal-grayscale.png"
+                        href="images/hand-holding-plate-grayscale@chelsig.png"
                         target="_blank"
                         rel="noopener"
                     >
@@ -547,7 +545,7 @@
                     </a>
 
                     <a
-                        href="images/personal-black-and-white.png"
+                        href="images/hand-holding-plate-black-and-white@chelsig.png"
                         target="_blank"
                         rel="noopener"
                     >
@@ -558,8 +556,8 @@
                 <div class="image-row">
                     <figure>
                         <img
-                            src="images/personal-original.jpg"
-                            alt="Original personal photograph showing a geometric object next to part of my body"
+                            src="images/hand-holding-plate-original@chelsig.png"
+                            alt="Original image of a hand holding a plate"
                             style="width: 280px; height: auto;"
                         >
                         <figcaption>
@@ -569,7 +567,7 @@
 
                     <figure>
                         <img
-                            src="images/personal-original.gif"
+                            src="images/hand-holding-plate@chelsig.gif"
                             alt="Personal photograph converted to GIF format"
                             style="width: 280px; height: auto;"
                         >
@@ -580,7 +578,7 @@
 
                     <figure>
                         <img
-                            src="images/personal-grayscale.png"
+                            src="images/hand-holding-plate-grayscale@chelsig.png"
                             alt="Personal photograph converted to grayscale"
                             style="width: 280px; height: auto;"
                         >
@@ -591,7 +589,7 @@
 
                     <figure>
                         <img
-                            src="images/personal-black-and-white.png"
+                            src="images/hand-holding-plate-black-and-white@chelsig.png"
                             alt="Personal photograph converted to black and white"
                             style="width: 280px; height: auto;"
                         >
@@ -603,12 +601,10 @@
                 </div>
                 <p>
                     The original photograph provides a reference
-                    for the other versions. Converting it to GIF
-                    can reduce its color detail because GIF has
-                    a limited color palette. The grayscale version
+                    for the other versions. The grayscale version
                     removes color while retaining shades of gray,
                     whereas the black-and-white version uses only
-                    black and white pixels. The resulting file
+                    black and white pixels. The final file
                     sizes depend on the format, dimensions, and
                     image content.
                 </p>
@@ -628,12 +624,12 @@
 
                 <figure>
                     <img
-                        src="images/personal-original.jpg"
-                        alt="Original personal geometry photograph displayed at a smaller size using CSS"
+                        src="images/hand-holding-plate-original@chelsig.png"
+                        alt="Original image of a hand holding a plate displayed at a smaller size using CSS"
                         style="width: 600px; max-width: 100%; height: auto;"
                     >
                     <figcaption>
-                        Original personal photograph displayed
+                        Original image of a hand holding a plate displayed
                         at 600 pixels wide using CSS. The original
                         file dimensions remain unchanged.
                     </figcaption>
@@ -653,7 +649,7 @@
             <article class="image-article">
                 <h4>Proper Reduction of Image with Editor</h4>
                 <p>
-                    This version of my personal photograph was
+                    This version of my personal picture was
                     resized in an image editor. The image's
                     actual pixel dimensions were reduced while
                     preserving its original aspect ratio. The
@@ -663,13 +659,13 @@
                 </p>
                 <figure>
                     <img
-                        src="images/personal-600x360.jpg"
-                        alt="Personal geometry photograph resized in an image editor"
+                        src="images/hand-holding-plate-600x591@chelsig.png"
+                        alt="Image of a hand holding a plate resized in an image editor"
                         style="width: 600px; max-width: 100%; height: auto;"
                     >
 
                     <figcaption>
-                        Personal photograph resized in an image
+                        Image of a hand holding a plate resized in an image
                         editor while preserving the original
                         proportions.
                     </figcaption>
@@ -690,28 +686,19 @@
                 <p>
                     The following examples use the properly
                     resized personal photograph but change
-                    its width and height independently.
+                    its width and height separately.
                     These changes demonstrate how a circular
                     or square object can appear distorted
                     when its original proportions are not
                     preserved.
                 </p>
 
-                <p>
-                    The examples below assume that the resized
-                    personal photograph is 600 × 360 pixels.
-                    If your actual resized photograph has a
-                    different height, replace these example
-                    dimensions with dimensions based on your
-                    own image.
-                </p>
-
                 <div class="image-row">
                     <figure>
                         <img
-                            src="images/personal-600x360.jpg"
-                            alt="Personal geometry photograph compressed vertically using CSS"
-                            style="width: 600px; height: 240px;"
+                            src="images/hand-holding-plate-distorted-horizontal-1@chelsig.png"
+                            alt="Image of a hand holding a plate compressed vertically using CSS"
+                            style="width: 600px; height: 394px;"
                         >
                         <figcaption>
                             Distortion 1: The width remains
@@ -723,39 +710,39 @@
 
                     <figure>
                         <img
-                            src="images/personal-600x360.jpg"
-                            alt="Personal geometry photograph compressed vertically even further using CSS"
-                            style="width: 600px; height: 160px;"
+                            src="images/hand-holding-plate-distorted-horizontal-2@chelsig.png"
+                            alt="Image of a hand holding a plate compressed vertically even further using CSS"
+                            style="width: 600px; height: 296px;"
                         >
                         <figcaption>
                             Distortion 2: The width remains
                             600 pixels, but the height is
-                            reduced further to 160 pixels.
+                            reduced further to 296 pixels.
                         </figcaption>
                     </figure>
 
                     <figure>
                         <img
-                            src="images/personal-600x360.jpg"
-                            alt="Personal geometry photograph compressed horizontally using CSS"
-                            style="width: 400px; height: 360px;"
+                            src="images/hand-holding-plate-distorted-vertical-1@chelsig.png"
+                            alt="Image of a hand holding a plate compressed horizontally using CSS"
+                            style="width: 400px; height: 591px;"
                         >
                         <figcaption>
-                            Distortion 3: The height remains
-                            360 pixels, but the width is
+                            Distortion 3: The height is
+                            591 pixels, but the width is
                             reduced to 400 pixels.
                         </figcaption>
                     </figure>
 
                     <figure>
                         <img
-                            src="images/personal-600x360.jpg"
-                            alt="Personal geometry photograph compressed horizontally even further using CSS"
-                            style="width: 267px; height: 360px;"
+                            src="images/hand-holding-plate-distorted-vertical-2@chelsig.png"
+                            alt="Image of a hand holding a plate compressed horizontally even further using CSS"
+                            style="width: 267px; height: 591px;"
                         >
                         <figcaption>
-                            Distortion 4: The height remains
-                            360 pixels, but the width is
+                            Distortion 4: The height is
+                            591 pixels, but the width is
                             reduced further to 267 pixels.
                         </figcaption>
                     </figure>
@@ -786,7 +773,7 @@
                 <div class="image-row">
                     <figure>
                         <img
-                            src="images/personal-600x360.jpg"
+                            src="images/personal-600x401.jpg"
                             alt="Personal geometry photograph properly resized to 600 pixels wide"
                             style="width: 600px; max-width: 100%; height: auto;"
                         >
@@ -798,12 +785,12 @@
 
                     <figure>
                         <img
-                            src="images/personal-150x90.jpg"
-                            alt="Personal geometry photograph reduced to 150 by 90 pixels and enlarged using CSS"
+                            src="images/personal-150x148.jpg"
+                            alt="Personal geometry photograph reduced to 150 by 148 pixels and enlarged using CSS"
                             style="width: 600px; max-width: 100%; height: auto;"
                         >
                         <figcaption>
-                            Reduced image: the 150 × 90-pixel
+                            Reduced image: the 150 × 148-pixel
                             photograph enlarged to 600 pixels
                             wide, potentially showing less detail.
                         </figcaption>
