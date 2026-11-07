@@ -168,8 +168,8 @@ document.addEventListener("DOMContentLoaded", function () {
         const academicBackground =
             document.getElementById("academicBackground").value;
 
-        const subjectBackground =
-            document.getElementById("subjectBackground").value;
+        const backupComputer =
+            document.getElementById("backupComputer").value;
 
         const primaryComputer =
             document.getElementById("primaryComputer").value;

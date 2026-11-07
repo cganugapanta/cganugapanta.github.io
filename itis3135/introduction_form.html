@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ITIS3135 | Chelsi Ganugapanta | Introduction Form</title>
+    <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Introduction Form</title>
+
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/default.css">
 
-    <script src="scripts/HTMLInclude.min.js" defer></script>
     <script src="scripts/introduction.js" defer></script>
 </head>
 
 <body>
 
-    <div data-include="components/header.html"></div>
+    <include src="components/header.html"></include>
 
     <main>
         <h2>Introduction Form</h2>
@@ -31,13 +31,13 @@
                 <input type="text" id="firstName" name="firstName"
                     value="Chelsi" placeholder="First name" required>
 
-                <label for="middleName">Middle Name or Initial:</label>
+                <label for="middleName">Middle Name:</label>
                 <input type="text" id="middleName" name="middleName"
                     placeholder="Middle name (optional)">
 
-                <label for="nickname">Nickname / Preferred Name:</label>
+                <label for="nickname">Nickname:</label>
                 <input type="text" id="nickname" name="nickname"
-                    placeholder="Preferred name (optional)">
+                    placeholder="Nickname (optional)">
 
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="lastName"
@@ -45,8 +45,7 @@
 
                 <label for="acknowledgment">Acknowledgment Statement:</label>
                 <textarea id="acknowledgment" name="acknowledgment"
-                    placeholder="I understand that this is a public document..."
-                    required></textarea>
+                    required> I understand that this is a public document and that the information I submit can be viewed by others.</textarea>
 
                 <label for="acknowledgmentDate">Acknowledgment Date:</label>
                 <input type="date" id="acknowledgmentDate"
@@ -54,99 +53,81 @@
 
             </fieldset>
 
-            <!-- Mascot Information -->
+            <!-- Mascot -->
             <fieldset>
                 <legend>Mascot Information</legend>
 
                 <label for="adjectives">Mascot Adjective:</label>
                 <input type="text" id="adjectives" name="adjectives"
-                    value="Calm" placeholder="Mascot adjective" required>
+                    value="Calm" required>
 
                 <label for="animal">Mascot Animal:</label>
                 <input type="text" id="animal" name="animal"
-                    value="Gazelle" placeholder="Mascot animal" required>
+                    value="Gazelle" required>
 
                 <label for="prettyNameDivider">Name Divider:</label>
                 <input type="text" id="prettyNameDivider"
-                    name="prettyNameDivider"
-                    value="~" placeholder="Divider symbol" required>
+                    name="prettyNameDivider" value="~" required>
 
             </fieldset>
 
-            <!-- Picture Information -->
+            <!-- Picture -->
             <fieldset>
                 <legend>Picture Information</legend>
 
-                <label for="img">Picture:</label>
+                <label for="img">Picture Upload:</label>
                 <input type="file" id="img" name="img" accept="image/*">
 
-                <p>Original Introduction Picture:</p>
                 <img id="picturePreview"
-                    src="images/intro_html.png"
-                    alt="Your original introduction picture"
-                    width="300">
+                    src="../images/intro_html.jpg"
+                    alt="Getting my photo taken at UNCC"
+                    width="340">
 
-                <label for="pictureAlt">Picture Description:</label>
+                <label for="pictureAlt">Picture Alt Text:</label>
                 <input type="text" id="pictureAlt" name="pictureAlt"
-                    placeholder="Describe your picture" required>
+                    value="Chelsi Ganugapanta getting photo taken at UNCC"
+                    required>
 
                 <label for="caption">Picture Caption:</label>
                 <input type="text" id="caption" name="caption"
-                    placeholder="Picture caption" required>
+                    value="Getting my photo taken at UNCC"
+                    required>
 
             </fieldset>
 
-            <!-- Personal Statement -->
+            <!-- Statement -->
             <fieldset>
                 <legend>Personal Statement</legend>
 
                 <label for="statement">Personal Statement:</label>
-                <textarea id="statement" name="statement"
-                    placeholder="Write your personal statement here..."
-                    required></textarea>
+                <textarea id="statement" name="statement" required>Hi, my name is Chelsi and I am a junior at UNCC. I am a Computer Science major with a concentration in cybersecurity. I recently got my associate's degree and am now fully prioritizing my CS classes. Outside of school, I like to work out and spend time with my friends.</textarea>
 
             </fieldset>
 
-            <!-- Personal Background -->
+            <!-- Background -->
             <fieldset>
                 <legend>Personal Background</legend>
 
                 <label for="personalBackground">Personal Background:</label>
-                <textarea id="personalBackground" name="personalBackground"
-                    placeholder="Tell us about your personal background..."
-                    required></textarea>
+                <textarea id="personalBackground" name="personalBackground" required>I was raised in Boston and moved to NC 6 years ago.</textarea>
 
                 <label for="professionalBackground">Professional Background:</label>
-                <textarea id="professionalBackground"
-                    name="professionalBackground"
-                    placeholder="Tell us about your professional background..."
-                    required></textarea>
+                <textarea id="professionalBackground" name="professionalBackground" required>Working at TJ Maxx over multiple summers.</textarea>
 
                 <label for="academicBackground">Academic Background:</label>
-                <textarea id="academicBackground" name="academicBackground"
-                    placeholder="Tell us about your academic background..."
-                    required></textarea>
+                <textarea id="academicBackground" name="academicBackground" required>Associates' Degree in Science, currently pursuing a Bachelor's Degree in Computer Science, graduating in 2028 Spring.</textarea>
 
-                <label for="subjectBackground">Background in this Subject:</label>
-                <textarea id="subjectBackground" name="subjectBackground"
-                    placeholder="Describe your background in this subject..."
-                    required></textarea>
-
-                <label for="primaryComputer">Primary Computer:</label>
-                <textarea id="primaryComputer" name="primaryComputer"
-                    placeholder="Describe your primary computer..."
-                    required></textarea>
+                <label for="primaryComputer">Primary Computer Platform:</label>
+                <textarea id="primaryComputer" name="primaryComputer" required>HP laptop, Windows 11 25H2</textarea>
 
                 <label for="primaryWorkLocation">Primary Work Location:</label>
-                <textarea id="primaryWorkLocation" name="primaryWorkLocation"
-                    placeholder="Describe your primary work location..."
-                    required></textarea>
+                <textarea id="primaryWorkLocation" name="primaryWorkLocation" required>Atkins Library</textarea>
+
+                <label for="backupComputer">Backup Work Computer and Location:</label>
+                <textarea id="backupComputer" name="backupComputer" required>2026 Macbook Air, any place that has wifi</textarea>
 
                 <label for="additionalInformation">Additional Information:</label>
-                <textarea id="additionalInformation"
-                    name="additionalInformation"
-                    placeholder="Any additional background information..."
-                    required></textarea>
+                <textarea id="additionalInformation" name="additionalInformation" required>Computer Science major with a concentration in cybersecurity.</textarea>
 
             </fieldset>
 
@@ -160,22 +141,90 @@
                         <h4>Course 1</h4>
 
                         <label>Department:</label>
-                        <input type="text" name="department"
-                            placeholder="ITIS" required>
+                        <input type="text" name="department" value="ITIS" required>
 
                         <label>Course Number:</label>
-                        <input type="text" name="courseNumber"
-                            placeholder="3135" required>
+                        <input type="text" name="courseNumber" value="3135" required>
 
                         <label>Course Name:</label>
-                        <input type="text" name="courseTitle"
-                            placeholder="Frontend Web App Development" required>
+                        <input type="text" name="courseTitle" value="Front End Web App Development" required>
 
                         <label>Reason for Taking:</label>
-                        <textarea name="reasonForTaking"
-                            placeholder="Why are you taking this course?"
-                            required></textarea>
+                        <textarea name="reasonForTaking" required>To get more experience with Web development</textarea>
 
+                        <button type="button" class="deleteCourse">Delete Course</button>
+                    </div>
+
+                    <div class="course">
+                        <h4>Course 2</h4>
+
+                        <label>Department:</label>
+                        <input type="text" name="department" value="ITSC" required>
+
+                        <label>Course Number:</label>
+                        <input type="text" name="courseNumber" value="2181" required>
+
+                        <label>Course Name:</label>
+                        <input type="text" name="courseTitle" value="Intro to Computer Systems" required>
+
+                        <label>Reason for Taking:</label>
+                        <textarea name="reasonForTaking" required>To learn more about computer architecture and hierarchies</textarea>
+
+                        <button type="button" class="deleteCourse">Delete Course</button>
+                    </div>
+
+                    <div class="course">
+                        <h4>Course 3</h4>
+
+                        <label>Department:</label>
+                        <input type="text" name="department" value="ITSC" required>
+
+                        <label>Course Number:</label>
+                        <input type="text" name="courseNumber" value="3155" required>
+
+                        <label>Course Name:</label>
+                        <input type="text" name="courseTitle" value="Software Engineering" required>
+
+                        <label>Reason for Taking:</label>
+                        <textarea name="reasonForTaking" required>To understand what is behind making and developing software</textarea>
+
+                        <button type="button" class="deleteCourse">Delete Course</button>
+                    </div>
+
+                    <div class="course">
+                        <h4>Course 4</h4>
+
+                        <label>Department:</label>
+                        <input type="text" name="department" value="ITSC" required>
+
+                        <label>Course Number:</label>
+                        <input type="text" name="courseNumber" value="3160" required>
+
+                        <label>Course Name:</label>
+                        <input type="text" name="courseTitle" value="Database Design and Implementation" required>
+
+                        <label>Reason for Taking:</label>
+                        <textarea name="reasonForTaking" required>To learn more about database use</textarea>
+
+                        <button type="button" class="deleteCourse">Delete Course</button>
+                    </div>
+
+                    <div class="course">
+                        <h4>Course 5</h4>
+
+                        <label>Department:</label>
+                        <input type="text" name="department" value="STAT" required>
+
+                        <label>Course Number:</label>
+                        <input type="text" name="courseNumber" value="2122" required>
+
+                        <label>Course Name:</label>
+                        <input type="text" name="courseTitle" value="Intro to Probability and Statistics" required>
+
+                        <label>Reason for Taking:</label>
+                        <textarea name="reasonForTaking" required>Required to fulfill math requirements</textarea>
+
+                        <button type="button" class="deleteCourse">Delete Course</button>
                     </div>
 
                 </div>
@@ -189,8 +238,7 @@
                 <legend>Favorite Quote</legend>
 
                 <label for="quote">Quote:</label>
-                <textarea id="quote" name="quote"
-                    placeholder="Enter your favorite quote..." required></textarea>
+                <textarea id="quote" name="quote" placeholder="Enter your favorite quote..." required></textarea>
 
                 <label for="quoteAuthor">Quote Author:</label>
                 <input type="text" id="quoteAuthor" name="quoteAuthor"
@@ -198,85 +246,73 @@
 
             </fieldset>
 
-            <!-- Optional Information -->
+            <!-- Optional -->
             <fieldset>
                 <legend>Additional Information</legend>
 
                 <label for="funnyItem">Funny Thing:</label>
-                <textarea id="funnyItem" name="funnyItem"
-                    placeholder="Something funny about you (optional)"></textarea>
+                <textarea id="funnyItem" name="funnyItem">I can wiggle my ears.</textarea>
 
                 <label for="somethingToShare">Something I Would Like to Share:</label>
                 <textarea id="somethingToShare" name="somethingToShare"
-                    placeholder="Something you would like to share (optional)"></textarea>
+                    placeholder="Optional"></textarea>
 
             </fieldset>
 
             <!-- Links -->
             <fieldset>
-                <legend>Favorite / Professional Links</legend>
+                <legend>Links</legend>
 
                 <label for="link1Label">Link 1 Name:</label>
-                <input type="text" id="link1Label" name="link1Label"
-                    placeholder="LinkedIn" required>
+                <input type="text" id="link1Label" name="link1Label" placeholder="LinkedIn" required>
 
                 <label for="link1URL">Link 1 URL:</label>
-                <input type="url" id="link1URL" name="link1URL"
-                    placeholder="https://..." required>
+                <input type="url" id="link1URL" name="link1URL" placeholder="https://..." required>
 
                 <label for="link2Label">Link 2 Name:</label>
-                <input type="text" id="link2Label" name="link2Label"
-                    placeholder="GitHub" required>
+                <input type="text" id="link2Label" name="link2Label" placeholder="GitHub" required>
 
                 <label for="link2URL">Link 2 URL:</label>
-                <input type="url" id="link2URL" name="link2URL"
-                    placeholder="https://..." required>
+                <input type="url" id="link2URL" name="link2URL" placeholder="https://..." required>
 
                 <label for="link3Label">Link 3 Name:</label>
-                <input type="text" id="link3Label" name="link3Label"
-                    placeholder="Portfolio" required>
+                <input type="text" id="link3Label" name="link3Label" placeholder="Website" required>
 
                 <label for="link3URL">Link 3 URL:</label>
-                <input type="url" id="link3URL" name="link3URL"
-                    placeholder="https://..." required>
+                <input type="url" id="link3URL" name="link3URL" placeholder="https://..." required>
 
                 <label for="link4Label">Link 4 Name:</label>
-                <input type="text" id="link4Label" name="link4Label"
-                    placeholder="Website" required>
+                <input type="text" id="link4Label" name="link4Label" placeholder="Portfolio" required>
 
                 <label for="link4URL">Link 4 URL:</label>
-                <input type="url" id="link4URL" name="link4URL"
-                    placeholder="https://..." required>
+                <input type="url" id="link4URL" name="link4URL" placeholder="https://..." required>
 
                 <label for="link5Label">Link 5 Name:</label>
-                <input type="text" id="link5Label" name="link5Label"
-                    placeholder="Other Link" required>
+                <input type="text" id="link5Label" name="link5Label" placeholder="Other" required>
 
                 <label for="link5URL">Link 5 URL:</label>
-                <input type="url" id="link5URL" name="link5URL"
-                    placeholder="https://..." required>
+                <input type="url" id="link5URL" name="link5URL" placeholder="https://..." required>
 
             </fieldset>
 
-            <!-- Form Buttons -->
+            <!-- Buttons -->
             <div class="form-buttons">
-
                 <button type="submit">Submit</button>
-
                 <button type="reset">Reset</button>
-
                 <button type="button" id="clear">Clear</button>
-
             </div>
 
         </form>
 
-        <!-- Generated Introduction Goes Here -->
         <div id="introductionOutput"></div>
 
     </main>
 
-    <div data-include="components/footer.html"></div>
+    <include src="components/footer.html"></include>
+
+    <script src="https://unpkg.com/htmlincludejs"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 
 </body>
 </html>
