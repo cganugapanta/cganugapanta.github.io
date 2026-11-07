@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ITIS3135 | Chelsi Ganugapanta | Introduction Form</title>
+
+    <link rel="stylesheet" href="styles/default.css">
+
+    <script src="Scripts/HTMLInclude.min.js" defer></script>
+    <script src="Scripts/introduction.js" defer></script>
+</head>
+
+<body>
+
+    <div data-include="components/header.html"></div>
+
+    <main>
+        <h2>Introduction Form</h2>
+
+        <h3>Please submit the form below.</h3>
+
+        <form id="form">
+
+            <!-- Personal Information -->
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName"
+                    value="Chelsi" placeholder="First name" required>
+
+                <label for="middleName">Middle Name or Initial:</label>
+                <input type="text" id="middleName" name="middleName"
+                    placeholder="Middle name (optional)">
+
+                <label for="nickname">Nickname / Preferred Name:</label>
+                <input type="text" id="nickname" name="nickname"
+                    placeholder="Preferred name (optional)">
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName"
+                    value="Ganugapanta" placeholder="Last name" required>
+
+                <label for="acknowledgment">Acknowledgment Statement:</label>
+                <textarea id="acknowledgment" name="acknowledgment"
+                    placeholder="I understand that this is a public document..."
+                    required></textarea>
+
+                <label for="acknowledgmentDate">Acknowledgment Date:</label>
+                <input type="date" id="acknowledgmentDate"
+                    name="acknowledgmentDate" required>
+
+            </fieldset>
+
+            <!-- Mascot Information -->
+            <fieldset>
+                <legend>Mascot Information</legend>
+
+                <label for="adjectives">Mascot Adjective:</label>
+                <input type="text" id="adjectives" name="adjectives"
+                    value="Calm" placeholder="Mascot adjective" required>
+
+                <label for="animal">Mascot Animal:</label>
+                <input type="text" id="animal" name="animal"
+                    value="Gazelle" placeholder="Mascot animal" required>
+
+                <label for="prettyNameDivider">Name Divider:</label>
+                <input type="text" id="prettyNameDivider"
+                    name="prettyNameDivider"
+                    value="~" placeholder="Divider symbol" required>
+
+            </fieldset>
+
+            <!-- Picture Information -->
+            <fieldset>
+                <legend>Picture Information</legend>
+
+                <label for="img">Picture:</label>
+                <input type="file" id="img" name="img" accept="image/*">
+
+                <p>Original Introduction Picture:</p>
+                <img id="picturePreview"
+                    src="images/chelsi.jpg"
+                    alt="Your original introduction picture"
+                    width="300">
+
+                <label for="pictureAlt">Picture Description:</label>
+                <input type="text" id="pictureAlt" name="pictureAlt"
+                    placeholder="Describe your picture" required>
+
+                <label for="caption">Picture Caption:</label>
+                <input type="text" id="caption" name="caption"
+                    placeholder="Picture caption" required>
+
+            </fieldset>
+
+            <!-- Personal Statement -->
+            <fieldset>
+                <legend>Personal Statement</legend>
+
+                <label for="statement">Personal Statement:</label>
+                <textarea id="statement" name="statement"
+                    placeholder="Write your personal statement here..."
+                    required></textarea>
+
+            </fieldset>
+
+            <!-- Personal Background -->
+            <fieldset>
+                <legend>Personal Background</legend>
+
+                <label for="personalBackground">Personal Background:</label>
+                <textarea id="personalBackground" name="personalBackground"
+                    placeholder="Tell us about your personal background..."
+                    required></textarea>
+
+                <label for="professionalBackground">Professional Background:</label>
+                <textarea id="professionalBackground"
+                    name="professionalBackground"
+                    placeholder="Tell us about your professional background..."
+                    required></textarea>
+
+                <label for="academicBackground">Academic Background:</label>
+                <textarea id="academicBackground" name="academicBackground"
+                    placeholder="Tell us about your academic background..."
+                    required></textarea>
+
+                <label for="subjectBackground">Background in this Subject:</label>
+                <textarea id="subjectBackground" name="subjectBackground"
+                    placeholder="Describe your background in this subject..."
+                    required></textarea>
+
+                <label for="primaryComputer">Primary Computer:</label>
+                <textarea id="primaryComputer" name="primaryComputer"
+                    placeholder="Describe your primary computer..."
+                    required></textarea>
+
+                <label for="primaryWorkLocation">Primary Work Location:</label>
+                <textarea id="primaryWorkLocation" name="primaryWorkLocation"
+                    placeholder="Describe your primary work location..."
+                    required></textarea>
+
+                <label for="additionalInformation">Additional Information:</label>
+                <textarea id="additionalInformation"
+                    name="additionalInformation"
+                    placeholder="Any additional background information..."
+                    required></textarea>
+
+            </fieldset>
+
+            <!-- Courses -->
+            <fieldset>
+                <legend>Courses</legend>
+
+                <div id="coursesContainer">
+
+                    <div class="course">
+                        <h4>Course 1</h4>
+
+                        <label>Department:</label>
+                        <input type="text" name="department"
+                            placeholder="ITIS" required>
+
+                        <label>Course Number:</label>
+                        <input type="text" name="courseNumber"
+                            placeholder="3135" required>
+
+                        <label>Course Name:</label>
+                        <input type="text" name="courseTitle"
+                            placeholder="Frontend Web App Development" required>
+
+                        <label>Reason for Taking:</label>
+                        <textarea name="reasonForTaking"
+                            placeholder="Why are you taking this course?"
+                            required></textarea>
+
+                    </div>
+
+                </div>
+
+                <button type="button" id="addCourse">Add Course</button>
+
+            </fieldset>
+
+            <!-- Quote -->
+            <fieldset>
+                <legend>Favorite Quote</legend>
+
+                <label for="quote">Quote:</label>
+                <textarea id="quote" name="quote"
+                    placeholder="Enter your favorite quote..." required></textarea>
+
+                <label for="quoteAuthor">Quote Author:</label>
+                <input type="text" id="quoteAuthor" name="quoteAuthor"
+                    placeholder="Quote author" required>
+
+            </fieldset>
+
+            <!-- Optional Information -->
+            <fieldset>
+                <legend>Additional Information</legend>
+
+                <label for="funnyItem">Funny Thing:</label>
+                <textarea id="funnyItem" name="funnyItem"
+                    placeholder="Something funny about you (optional)"></textarea>
+
+                <label for="somethingToShare">Something I Would Like to Share:</label>
+                <textarea id="somethingToShare" name="somethingToShare"
+                    placeholder="Something you would like to share (optional)"></textarea>
+
+            </fieldset>
+
+            <!-- Links -->
+            <fieldset>
+                <legend>Favorite / Professional Links</legend>
+
+                <label for="link1Label">Link 1 Name:</label>
+                <input type="text" id="link1Label" name="link1Label"
+                    placeholder="LinkedIn" required>
+
+                <label for="link1URL">Link 1 URL:</label>
+                <input type="url" id="link1URL" name="link1URL"
+                    placeholder="https://..." required>
+
+                <label for="link2Label">Link 2 Name:</label>
+                <input type="text" id="link2Label" name="link2Label"
+                    placeholder="GitHub" required>
+
+                <label for="link2URL">Link 2 URL:</label>
+                <input type="url" id="link2URL" name="link2URL"
+                    placeholder="https://..." required>
+
+                <label for="link3Label">Link 3 Name:</label>
+                <input type="text" id="link3Label" name="link3Label"
+                    placeholder="Portfolio" required>
+
+                <label for="link3URL">Link 3 URL:</label>
+                <input type="url" id="link3URL" name="link3URL"
+                    placeholder="https://..." required>
+
+                <label for="link4Label">Link 4 Name:</label>
+                <input type="text" id="link4Label" name="link4Label"
+                    placeholder="Website" required>
+
+                <label for="link4URL">Link 4 URL:</label>
+                <input type="url" id="link4URL" name="link4URL"
+                    placeholder="https://..." required>
+
+                <label for="link5Label">Link 5 Name:</label>
+                <input type="text" id="link5Label" name="link5Label"
+                    placeholder="Other Link" required>
+
+                <label for="link5URL">Link 5 URL:</label>
+                <input type="url" id="link5URL" name="link5URL"
+                    placeholder="https://..." required>
+
+            </fieldset>
+
+            <!-- Form Buttons -->
+            <div class="form-buttons">
+
+                <button type="submit">Submit</button>
+
+                <button type="reset">Reset</button>
+
+                <button type="button" id="clear">Clear</button>
+
+            </div>
+
+        </form>
+
+        <!-- Generated Introduction Goes Here -->
+        <div id="introductionOutput"></div>
+
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+</body>
+</html>
