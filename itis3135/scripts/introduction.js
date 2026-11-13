@@ -288,7 +288,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 <li>Personal Background: ${personalBackground}</li>
                 <li>Professional Background: ${professionalBackground}</li>
                 <li>Academic Background: ${academicBackground}</li>
-                <li>Background in Subject: ${subjectBackground}</li>
                 <li>Primary Computer: ${primaryComputer}</li>
                 <li>Primary Work Location: ${primaryWorkLocation}</li>
                 <li>Additional Information: ${additionalInformation}</li>
@@ -365,9 +364,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-/* Generate HTML, JSON, and XML representations of the introduction form */
+/* ============================================
+   GENERATE HTML, JSON, AND XML
+============================================ */
 
-/* Collect all introduction form data */
+/* Collect all introduction form information */
 function getIntroductionData() {
     const form = document.getElementById("form");
     const data = {};
@@ -375,12 +376,17 @@ function getIntroductionData() {
     const fields = form.querySelectorAll("input:not([type='file']), textarea");
 
     fields.forEach(field => {
-        if (field.name && !["department", "courseNumber", "courseTitle", "reasonForTaking"].includes(field.name)) {
+        if (field.name && ![
+            "department",
+            "courseNumber",
+            "courseTitle",
+            "reasonForTaking"
+        ].includes(field.name)) {
             data[field.name] = field.value;
         }
     });
 
-    /* Collect courses separately */
+    /* Collect all courses */
     data.courses = [];
 
     document.querySelectorAll(".course").forEach(course => {
@@ -392,12 +398,44 @@ function getIntroductionData() {
         });
     });
 
+    /* Collect all five links */
+    data.links = [];
+
+    for (let i = 1; i <= 5; i++) {
+        data.links.push({
+            label: data["link" + i + "Label"],
+            url: data["link" + i + "URL"]
+        });
+    }
+
     return data;
+}
+
+/* Escape HTML characters */
+function escapeHTML(value) {
+    return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+}
+
+/* Escape XML characters */
+function escapeXML(value) {
+    return String(value ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&apos;");
 }
 
 /* Generate HTML */
 function generateHTML() {
     const data = getIntroductionData();
+
+    const picture = document.getElementById("picturePreview").src;
 
     const html = `<!DOCTYPE html>
 <html lang="en">
@@ -408,11 +446,20 @@ function generateHTML() {
 </head>
 <body>
 
-    <h1>${escapeHTML(data.firstName)} ${escapeHTML(data.middleName)} ${escapeHTML(data.lastName)}</h1>
+    <h1>${escapeHTML(data.firstName)} ${escapeHTML(data.middleName)} ${escapeHTML(data.nickname)} ${escapeHTML(data.lastName)}</h1>
 
     <h2>${escapeHTML(data.adjectives)} ${escapeHTML(data.animal)}</h2>
 
-    <h3>Personal Information</h3>
+    <h3>Acknowledgment</h3>
+    <p>${escapeHTML(data.acknowledgment)}</p>
+    <p>Date: ${escapeHTML(data.acknowledgmentDate)}</p>
+
+    <figure>
+        <img src="${escapeHTML(picture)}" alt="${escapeHTML(data.pictureAlt)}" width="300">
+        <figcaption>${escapeHTML(data.caption)}</figcaption>
+    </figure>
+
+    <h3>Personal Statement</h3>
     <p>${escapeHTML(data.statement)}</p>
 
     <h3>Personal Background</h3>
@@ -445,4 +492,104 @@ function generateHTML() {
             <p>Reason: ${escapeHTML(course.reasonForTaking)}</p>
         </li>
         `).join("")}
-   
+    </ul>
+
+    <h3>Favorite Quote</h3>
+    <blockquote>${escapeHTML(data.quote)}</blockquote>
+    <p>-${escapeHTML(data.quoteAuthor)}</p>
+
+    <h3>Funny Thing</h3>
+    <p>${escapeHTML(data.funnyItem)}</p>
+
+    <h3>Something I Would Like to Share</h3>
+    <p>${escapeHTML(data.somethingToShare)}</p>
+
+    <h3>Links</h3>
+    <ul>
+        ${data.links.map(link => `
+        <li>
+            <a href="${escapeHTML(link.url)}">${escapeHTML(link.label)}</a>
+        </li>
+        `).join("")}
+    </ul>
+
+</body>
+</html>`;
+
+    displayCode(html, "Generated HTML");
+}
+
+/* Generate JSON */
+function generateJSON() {
+    const data = getIntroductionData();
+
+    const json = JSON.stringify(data, null, 4);
+
+    displayCode(json, "Generated JSON");
+}
+
+/* Generate XML */
+function generateXML() {
+    const data = getIntroductionData();
+
+    let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<introduction>\n';
+
+    Object.entries(data).forEach(([key, value]) => {
+
+        if (Array.isArray(value)) {
+
+            xml += `    <${key}>\n`;
+
+            value.forEach(item => {
+
+                xml += `        <item>\n`;
+
+                Object.entries(item).forEach(([itemKey, itemValue]) => {
+                    xml += `            <${itemKey}>${escapeXML(itemValue)}</${itemKey}>\n`;
+                });
+
+                xml += `        </item>\n`;
+            });
+
+            xml += `    </${key}>\n`;
+
+        } else {
+
+            xml += `    <${key}>${escapeXML(value)}</${key}>\n`;
+
+        }
+
+    });
+
+    xml += "</introduction>";
+
+    displayCode(xml, "Generated XML");
+}
+
+/* Display generated code in a textarea */
+function displayCode(code, title) {
+
+    const output = document.getElementById("codeOutput");
+
+    output.innerHTML = "";
+
+    const heading = document.createElement("h2");
+    heading.textContent = title;
+
+    const textarea = document.createElement("textarea");
+    textarea.value = code;
+    textarea.rows = 25;
+    textarea.cols = 80;
+    textarea.readOnly = true;
+    textarea.setAttribute("aria-label", title);
+
+    output.appendChild(heading);
+    output.appendChild(textarea);
+}
+
+/* Connect generator buttons */
+document.getElementById("generateHTML").addEventListener("click", generateHTML);
+
+document.getElementById("generateJSON").addEventListener("click", generateJSON);
+
+document.getElementById("generateXML").addEventListener("click", generateXML);
