@@ -1,0 +1,26 @@
+/* Green Gazelle Goods — editorial boutique theme */
+:root{--forest:#244b3b;--sage:#a8bba3;--cream:#f7f4eb;--paper:#fffdf7;--charcoal:#26312b;--gold:#b68b4c;--line:#d9dfd3}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--charcoal);background:var(--cream);font-family:"Trebuchet MS",Arial,sans-serif;line-height:1.7}
+.site-header{padding:1.5rem 5vw 1.2rem;background:var(--paper);border-bottom:1px solid var(--line);text-align:center}
+.brand{color:var(--forest);font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,3rem);font-weight:700;text-decoration:none;letter-spacing:.02em}
+.tagline{margin:.15rem 0 1rem;color:#68766a}
+.nav-list{display:flex;flex-wrap:wrap;justify-content:center;gap:.45rem;list-style:none;padding:0;margin:0}
+.nav-list a{display:inline-block;padding:.45rem .85rem;border-radius:2rem;color:var(--forest);text-decoration:none;font-size:.95rem}
+.nav-list a:hover,.nav-list a:focus,.nav-list a[aria-current=page]{background:var(--forest);color:white}
+main{width:min(1100px,90%);margin:2.5rem auto 4rem}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(1.5rem,5vw,4rem);padding:clamp(1.25rem,4vw,3rem);background:var(--paper);border:1px solid var(--line);border-radius:1.2rem;box-shadow:0 12px 30px rgba(36,75,59,.07)}
+.hero-copy{padding:.5rem}
+.eyebrow{color:#8b6a35;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em}
+h1,h2{color:var(--forest);font-family:Georgia,"Times New Roman",serif;line-height:1.2}
+h1{font-size:clamp(2rem,4.5vw,3.5rem);margin:.5rem 0 1rem}
+h2{font-size:clamp(1.5rem,3vw,2.2rem);margin-top:0}
+.hero img{display:block;width:100%;min-height:280px;max-height:440px;object-fit:cover;border-radius:.8rem}
+.content-panel{margin-top:1.5rem;padding:clamp(1.5rem,4vw,3rem);background:#e9eee4;border-left:5px solid var(--gold);border-radius:.5rem}
+.content-panel p{max-width:75ch}
+.site-footer{padding:1.8rem 5vw;text-align:center;background:var(--forest);color:#f7f4eb}
+.site-footer p{margin:.25rem}
+.site-footer strong{letter-spacing:.04em}
+a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.hero img{min-height:220px;max-height:320px}main{width:94%;margin-top:1.2rem}.site-header{padding-inline:3%}}
