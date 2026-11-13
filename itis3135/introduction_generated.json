@@ -1,0 +1,89 @@
+{
+    "firstName": "Chelsi",
+    "middleName": "",
+    "nickname": "",
+    "lastName": "Ganugapanta",
+    "acknowledgment": " I understand that this is a public document and that the information I submit can be viewed by others.",
+    "acknowledgmentDate": "2026-09-06",
+    "adjectives": "Calm",
+    "animal": "Gazelle",
+    "prettyNameDivider": "~",
+    "pictureAlt": "Chelsi Ganugapanta getting photo taken at UNCC",
+    "caption": "Getting my photo taken at UNCC",
+    "statement": "Hi, my name is Chelsi and I am a junior at UNCC. I am a Computer Science major with a concentration in cybersecurity. I recently got my associate's degree and am now fully prioritizing my CS classes. Outside of school, I like to work out and spend time with my friends.",
+    "personalBackground": "I was raised in Boston and moved to NC 6 years ago.",
+    "professionalBackground": "Working at TJ Maxx over multiple summers.",
+    "academicBackground": "Associates' Degree in Science, currently pursuing a Bachelor's Degree in Computer Science, graduating in 2028 Spring.",
+    "primaryComputer": "HP laptop, Windows 11 25H2",
+    "primaryWorkLocation": "Atkins Library",
+    "backupComputer": "2026 Macbook Air, any place that has wifi",
+    "additionalInformation": "Computer Science major with a concentration in cybersecurity.",
+    "quote": "\"What the wise do in the beginning, fools do in the end.\"",
+    "quoteAuthor": "Warren Buffet",
+    "funnyItem": "I can wiggle my ears.",
+    "somethingToShare": "",
+    "link1Label": "LinkedIn",
+    "link1URL": "https://www.linkedin.com/in/chelsi-ganugapanta-b16953323/",
+    "link2Label": "GitHub",
+    "link2URL": "https://github.com/cganugapanta",
+    "link3Label": "GitHub.io",
+    "link3URL": "https://github.com/cganugapanta/cganugapanta.github.io",
+    "link4Label": "Website",
+    "link4URL": "https://webpages.charlotte.edu/cganugap/",
+    "link5Label": "FCC",
+    "link5URL": "https://www.freecodecamp.org/cganugap",
+    "courses": [
+        {
+            "department": "ITIS",
+            "courseNumber": "3135",
+            "courseTitle": "Front End Web App Development",
+            "reasonForTaking": "To get more experience with Web development"
+        },
+        {
+            "department": "ITSC",
+            "courseNumber": "2181",
+            "courseTitle": "Intro to Computer Systems",
+            "reasonForTaking": "To learn more about computer architecture and hierarchies"
+        },
+        {
+            "department": "ITSC",
+            "courseNumber": "3155",
+            "courseTitle": "Software Engineering",
+            "reasonForTaking": "To understand what is behind making and developing software"
+        },
+        {
+            "department": "ITSC",
+            "courseNumber": "3160",
+            "courseTitle": "Database Design and Implementation",
+            "reasonForTaking": "To learn more about database use"
+        },
+        {
+            "department": "STAT",
+            "courseNumber": "2122",
+            "courseTitle": "Intro to Probability and Statistics",
+            "reasonForTaking": "Required to fulfill math requirements"
+        }
+    ],
+    "links": [
+        {
+            "label": "LinkedIn",
+            "url": "https://www.linkedin.com/in/chelsi-ganugapanta-b16953323/"
+        },
+        {
+            "label": "GitHub",
+            "url": "https://github.com/cganugapanta"
+        },
+        {
+            "label": "GitHub.io",
+            "url": "https://github.com/cganugapanta/cganugapanta.github.io"
+        },
+        {
+            "label": "Website",
+            "url": "https://webpages.charlotte.edu/cganugap/"
+        },
+        {
+            "label": "FCC",
+            "url": "https://www.freecodecamp.org/cganugap"
+        }
+    ]
+}
