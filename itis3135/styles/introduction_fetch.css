@@ -1,0 +1,110 @@
+/* Introduction Fetch Page */
+
+/* Main introduction section */
+.classmate-intro {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 900px;
+}
+
+.classmate-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.classmate-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Loading and status message */
+.fetch-status {
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Classmate gallery */
+.classmate-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* Individual classmate cards */
+.classmate-card {
+    background-color: #ffffff;
+    border: 2px solid #8a4b20;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    overflow-wrap: break-word;
+}
+
+/* Student pictures */
+.classmate-card img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #674080;
+    margin-bottom: 1rem;
+}
+
+/* Student names */
+.classmate-card h2 {
+    color: #674080;
+    font-size: 1.5rem;
+    margin: 0.75rem 0;
+}
+
+/* Mascot and username text */
+.classmate-card p {
+    line-height: 1.6;
+    margin: 0.75rem 0;
+}
+
+/* Student quotes */
+.classmate-card blockquote {
+    font-style: italic;
+    border-left: 4px solid #8a4b20;
+    margin: 1rem 0;
+    padding: 0.75rem;
+    background-color: #f8f2ec;
+    line-height: 1.6;
+}
+
+/* Course heading */
+.classmate-card h3 {
+    color: #8a4b20;
+    margin-top: 1.5rem;
+}
+
+/* Course lists */
+.classmate-card ul {
+    text-align: left;
+    padding-left: 2rem;
+    line-height: 1.8;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+    .classmate-gallery {
+        grid-template-columns: 1fr;
+        padding: 0.5rem;
+    }
+
+    .classmate-card {
+        padding: 1rem;
+    }
+
+    .classmate-card img {
+        width: 150px;
+        height: 150px;
+    }
+}

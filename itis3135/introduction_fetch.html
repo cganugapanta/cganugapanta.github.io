@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Meet the Class</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/introduction_fetch.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <include src="components/header.html"></include>
+
+    <main>
+        <h1>ITIS3135 | Chelsi Ganugapanta | Calm Gazelle</h1>
+        <section class="classmate-intro">
+            <h2>Meet the Class</h2>
+
+            <p>
+                Welcome to our classmate field guide!
+                Explore the introductions submitted by
+                our ITIS 3135 class.
+            </p>
+        </section>
+
+        <p id="fetchStatus" class="fetch-status"
+            role="status" aria-live="polite">
+            Loading introductions...
+        </p>
+
+        <section id="classmateGallery"
+                class="classmate-gallery"
+                aria-label="Classmate introduction profiles">     
+        </section>
+
+        <h3>Chelsi Ganugapanta</h3>
+
+        <figure>
+            <img src="images/intro_html.png" alt="At UNCC" width="340">
+            <figcaption>Getting my photo taken at UNCC</figcaption>
+        </figure>
+
+        <p>Hi, my name is Chelsi and I am a junior at UNCC. I am a Computer Science major with a concentration in cybersecurity. I recently got my associate's degree and am now fully prioritizing my CS classes. Outside of school, I like to work out and spend time with my friends.</p>
+
+        <ul>
+            <li><strong>Personal Background:</strong> I was raised in Boston and moved to NC 6 years ago.</li>
+            <li><strong>Professional Background:</strong> Working at TJ Maxx over multiple summers.</li>
+            <li><strong>Academic Background:</strong> Associates' Degree in Science, currently pursuing a Bachelor's Degree in Computer Science, graduating in 2028 Spring.</li>
+            <li><strong>Primary Computer Platform:</strong> HP laptop, Windows 11 25H2</li>
+            <li><strong>Primary Work Location:</strong> Atkins Library</li>
+            <li><strong>Backup Work Computer and Location:</strong> 2026 Macbook Air, any place that has wifi</li>
+            <li><strong>Courses I'm Taking, and Why:</strong>
+                <ul>
+                    <li><strong>ITIS 3135 - Front End Web App Development:</strong> To get more experience with Web development</li>
+                    <li><strong>ITSC 2181 - Intro to Computer Systems:</strong> To learn more about computer architecture and hierarchies</li>
+                    <li><strong>ITSC 3155 - Software Engineering:</strong> To understand what is behind making and developing software</li>
+                    <li><strong>ITSC 3160 - Database Design and Implementation:</strong> To learn more about database use</li>
+                    <li><strong>STAT 2122 - Intro to Probability and Statistics:</strong> Required to fulfill math requirements</li>
+                </ul>
+            </li>
+            <li><strong>Funny/Interesting Item to Remember me by:</strong> I can wiggle my ears.</li>
+        </ul>
+    </main>
+
+    <include src="components/footer.html"></include>
+    <script src="https://unpkg.com/htmlincludejs"></script>
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="scripts/introduction_fetch.js" defer></script>
+
+</body>
+</html>
