@@ -3,34 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chelsi Nathan | Personal Home</title>
+
+    <title>Chelsi's Personal Space | Personal Home</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.png">
 
     <style>
         body {
             font-family: Verdana, Helvetica, sans-serif;
-            background-color: #eef5fb; 
-            color: #222222;            
-            margin: 0;
+            background-color: #eef5fb;
+            color: #222222;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
         }
 
         header {
-            background-color: #1e3a5f; 
-            color: #ffffff;            
+            background-color: #1e3a5f;
+            /* White text provides contrast against the dark blue header. */
+            color: #ffffff;
             padding: 24px;
             text-align: center;
             border-radius: 8px;
         }
 
         h1 {
+            font-family: Georgia, serif;
             margin: 0 0 8px 0;
             font-size: 2rem;
+        }
+
+        h2, h3 {
+            font-family: Georgia, serif;
         }
 
         main {
             max-width: 800px;
             margin: 30px auto;
+            /* White background separates the content from the light blue page. */
             background: #ffffff;
             padding: 24px;
             border-radius: 8px;
@@ -47,40 +58,92 @@
             color: #08437a;
         }
 
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            margin: 0 10px;
+        }
+
+        main img {
+            display: block;
+            max-width: 100%;
+            width: 300px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+
         footer {
             text-align: center;
             margin-top: 40px;
             font-size: 0.9rem;
             color: #555555;
         }
+
+        /* Mobile layout adjustments for smaller screens. */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 15px;
+            }
+
+            main {
+                padding: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
     </style>
 
-    
+    <script src="https://lint.webpages.charlotte.edu/js/lint.js"></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <header>
         <h1>Chelsi's Personal Space</h1>
-        <p>Welcome to my personal webpage!</p>
+
+        <p><em>A little space for my interests, goals, and experiences.</em></p>
+
+        <nav>
+            <a href="itis3135/index.html">ITIS3135 Course Site</a>
+            <a href="itis3135/calmgazelle/">Green Gazelle Goods</a>
+        </nav>
     </header>
 
     <main>
+        <h2>Personal Home</h2>
+
+        <img src="images/personal-photo.jpg" alt="Personal photograph">
+
         <section>
-            <h2>About Me</h2>
+            <h3>About Me</h3>
+
             <p>
-                Hello! I am a student at UNC Charlotte studying computer science with a focus 
-                on cybersecurity. I enjoy learning how systems work, collaborating with others, and 
-                solving technical problems.
+                Hello! I am a student at UNC Charlotte studying computer science with a focus
+                on cybersecurity. I enjoy learning how systems work, collaborating with others,
+                and solving technical problems.
             </p>
+
             <p>
-                When I am not working on computer projects, you can usually find me listening to 
+                When I am not working on computer projects, you can usually find me listening to
                 music, spending time with friends, designing dresses or cooking.
             </p>
         </section>
 
         <section>
-            <h2>My Interests &amp; Goals</h2>
+            <h3>My Interests &amp; Goals</h3>
+
             <ul>
                 <li>Exploring cybersecurity and methods for keeping systems safe</li>
                 <li>Learning how to make complicated processes easier with technology</li>
@@ -89,21 +152,26 @@
         </section>
 
         <section>
-            <h2>Course Portal Link</h2>
+            <h3>Course Portal Link</h3>
+
             <p>Access my academic coursework and design firm pages below:</p>
-            <p><a href="itis3135/index.html">Click to go to my ITIS3135 Site &rarr;</a></p>
+
+            <p>
+                <a href="itis3135/index.html">Click to go to my ITIS3135 Site &rarr;</a>
+            </p>
         </section>
     </main>
 
     <footer>
+        <p><em>"Learning, creating, and exploring new possibilities."</em></p>
+
         <p>&copy; 2026 Chelsi Nathan</p>
+
         <p>
-            <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> | 
+            <a href="https://validator.w3.org/check?uri=referer">Validate HTML</a> |
             <a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
         </p>
     </footer>
-
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
