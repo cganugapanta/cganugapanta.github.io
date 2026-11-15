@@ -7,7 +7,6 @@
     
     <link rel="icon" type="image/png" href="images/favicon.png">
 
-    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 
     <style>
@@ -21,13 +20,19 @@
         }
 
         /* Rule requiring at least 2 fonts (Helvetica, Arial) */
+
         body {
             font-family: Helvetica, Arial, sans-serif;
             background-color: var(--background);
             color: var(--secondary);
-            margin: 0;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: Georgia, serif;
         }
 
         /* Link colors overridden requirement */
@@ -101,6 +106,7 @@
     </style>
 
     <script src="https://lint.webpages.charlotte.edu/js/lint.js"></script>
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -115,6 +121,7 @@
         <p>Chelsi Ganugapanta Designs is a web development agency specializing in modern, high-performance websites for businesses.</p>
 
         <h3>5 Things About This Firm</h3>
+        /* The qualities class identifies the firm's service list so it can use square bullets. */
         <ul class="qualities">
             <li>Semantic &amp; Accessible HTML Codebase</li>
             <li>Custom Color Palette Consultation</li>
@@ -125,6 +132,7 @@
 
         <p>We provide front-end development, website redesigns, and help with maintenance. Whether you need a new brand identity or a complete site overhaul, we turn complex ideas into clean web experiences.</p>
 
+        /* The contact-info class groups contact details and gives the section a distinct border. */
         <section class="contact-info">
             <h3>Contact Us</h3>
             <p><strong>Phone:</strong> (123) 456-7890</p>
@@ -137,16 +145,14 @@
         <p><em>"Designing clean web experiences with precision."</em></p>
         
         <p>Back to <a href="../index.html">ITIS 3135 Main Page</a></p>
+        <nav>
+            <a href="../index.html">ITIS 3135 Main Page</a>
+            |
+            <a href="../introduction.html">My Introduction</a>
+        </nav>
 
         <p>Page created by Chelsi Ganugapanta Designs &copy; Certified Web Developer 2026</p>
-        <p>
-            <a href="https://validator.w3.org/check?uri=referer" id="validation_link_html">
-                <img src="https://images.webpages.charlotte.edu/vhtml32.png" alt="Valid HTML!">
-            </a>
-            <a href="https://jigsaw.w3.org/css-validator/check/referer" id="validation_link_css">
-                <img src="https://images.webpages.charlotte.edu/vcss-blue.gif" alt="Valid CSS!">
-            </a>
-        </p>
+
     </footer>
 </body>
 </html>
