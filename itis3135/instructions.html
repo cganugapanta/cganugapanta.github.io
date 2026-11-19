@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Instructions</title>
+    <title>Chelsi Ganugapanta's Calm Gazelle | ITIS3135 | Instructions</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/default.css">
 
     <style>
+        /* The documentation-page class centers the guide and limits its width. */
         .documentation-page {
             max-width: 1050px;
             margin: 30px auto;
@@ -19,11 +20,13 @@
             color: #234d32;
         }
 
+        /* The documentation-intro class controls the spacing and readability of the introduction. */
         .documentation-intro {
             line-height: 1.8;
             margin-bottom: 30px;
         }
 
+        /* The documentation-layout class places the navigation beside the guide content. */
         .documentation-layout {
             display: grid;
             grid-template-columns: 250px minmax(0, 1fr);
@@ -31,6 +34,7 @@
             align-items: start;
         }
 
+        /* The documentation-nav class gives the guide navigation its own highlighted area. */
         .documentation-nav {
             padding: 20px;
             background-color: #e4efe1;
@@ -53,9 +57,11 @@
             color: #234d32;
         }
 
+        /* The documentation-content class separates the guide text from its navigation. */
         .documentation-content {
             min-width: 0;
             padding: 25px;
+            /* White creates a neutral reading surface that contrasts with the green navigation. */
             background-color: #ffffff;
             border-radius: 10px;
         }
@@ -85,15 +91,18 @@
             }
         }
     </style>
+
     <script src="https://lint.page/kit/4d0fe3.js" defer></script>
 </head>
-<body>
 
+<body>
     <include src="components/header.html"></include>
 
+    <!-- The documentation-page class centers and spaces the entire guide. -->
     <main class="documentation-page">
-        <h2>Green Gazelle Goods | Sustainable Living Guide</h2>
+        <h2>Instructions</h2>
 
+        <!-- The documentation-intro class makes the introductory paragraph easier to read. -->
         <p class="documentation-intro">
             Sustainable living can begin with small decisions.
             This guide introduces practical ways to think about
@@ -101,7 +110,10 @@
             that may help reduce unnecessary waste.
         </p>
 
+        <!-- This div groups the guide navigation and reading content into a two-column layout. -->
         <div class="documentation-layout">
+
+            <!-- The documentation-nav class styles this section as a separate navigation panel. -->
             <nav class="documentation-nav" aria-label="Guide contents">
                 <h3>Guide Contents</h3>
 
@@ -109,30 +121,28 @@
                     <li>
                         <a href="#introduction">Introduction</a>
                     </li>
-
                     <li>
                         <a href="#plastic-waste">Reducing Plastic Waste</a>
                     </li>
-
                     <li>
                         <a href="#reusable-products">Reusable Products</a>
                     </li>
-
                     <li>
                         <a href="#shopping">Sustainable Shopping</a>
                     </li>
-
                     <li>
                         <a href="#product-care">Caring for Products</a>
                     </li>
-
                     <li>
                         <a href="#getting-started">Getting Started</a>
                     </li>
                 </ul>
             </nav>
 
+            <!-- The documentation-content class creates a separate reading area for the guide. -->
             <div class="documentation-content">
+
+                <!-- The introduction ID gives the first guide section a navigation destination. -->
                 <section id="introduction">
                     <h3>1. Introduction</h3>
 
@@ -151,6 +161,7 @@
                     </p>
                 </section>
 
+                <!-- The plastic-waste ID lets visitors jump directly to this section. -->
                 <section id="plastic-waste">
                     <h3>2. Reducing Plastic Waste</h3>
 
@@ -171,6 +182,7 @@
                     </ul>
                 </section>
 
+                <!-- The reusable-products ID connects this section to its navigation link. -->
                 <section id="reusable-products">
                     <h3>3. Reusable Products</h3>
 
@@ -191,6 +203,7 @@
                     </p>
                 </section>
 
+                <!-- The shopping ID provides a destination for the sustainable shopping navigation link. -->
                 <section id="shopping">
                     <h3>4. Sustainable Shopping</h3>
 
@@ -211,6 +224,7 @@
                     </ol>
                 </section>
 
+                <!-- The product-care ID allows direct navigation to product maintenance advice. -->
                 <section id="product-care">
                     <h3>5. Caring for Your Products</h3>
 
@@ -228,6 +242,7 @@
                     </ul>
                 </section>
 
+                <!-- The getting-started ID provides a destination for the final guide navigation link. -->
                 <section id="getting-started">
                     <h3>6. Getting Started</h3>
 
@@ -245,13 +260,23 @@
                         work for you.
                     </p>
                 </section>
+
             </div>
         </div>
+
+        <!-- This image provides a visual example of a reusable everyday product. -->
+        <img
+            src="images/green-gazelle/water-bottle.jpg"
+            alt="Reusable water bottle representing sustainable everyday products"
+            width="300"
+            loading="lazy"
+        >
+
     </main>
 
     <include src="components/footer.html"></include>
-    <script src="https://unpkg.com/htmlincludejs"></script>
-    
+
+    <script src="scripts/include.js" defer></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>
