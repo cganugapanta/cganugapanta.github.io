@@ -1,32 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Gazelle Goods | Contact</title>
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="styles/default.css">
-<script src="https://lint.page/kit/4d0fe3.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Gazelle Goods | Contact</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/default.css">
+
+    <script src="https://lint.page/kit/4d0fe3.js" defer></script>
 </head>
+
 <body>
-<div id="header-container"></div>
-<main>
-<section class="hero">
-<div class="hero-copy">
-<p class="eyebrow">Questions are always welcome</p>
-<h1>Say hello</h1>
-<p>Have a question about the Everyday Essentials Kit, want to suggest a useful product, or share a sustainability tip? Green Gazelle Goods would love to hear from you. A small shop works best when it listens to the people who use its products.</p>
-</div>
-<img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="Nature-inspired scene representing sustainable everyday living">
-</section>
-<section class="content-panel">
-<h2>Contact</h2>
-<p>For this fictional website, contact us at hello@greengazelle.example. The email uses the reserved .example domain, so it is a demonstration address rather than a working business inbox</p>
-<p>At Green Gazelle Goods, our guiding idea is that a few well-chosen essentials can support thoughtful routines. Explore the pages to learn about our concept, featured kit, sample hours, pop-up location, and how the shop would work.</p>
-</section>
-</main>
-<div id="footer-container"></div>
-<script src="scripts/main.js" data-header="components/header.html" data-footer="components/footer.html"></script>
-<script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
+    <!-- This div uses an ID so JavaScript can insert the shared header component consistently across all pages. -->
+    <div id="header-container"></div>
+
+    <main>
+
+        <h2>Contact</h2>
+
+        <!-- This section uses the hero class to arrange the introductory text and image in a consistent two-column layout. -->
+        <section class="hero">
+
+            <!-- This div uses the hero-copy class to group introductory text separately from the accompanying image. -->
+            <div class="hero-copy">
+
+                <p class="eyebrow">Questions are always welcome</p>
+
+                <h3>Say Hello</h3>
+
+                <p>
+                    Have a question about the Everyday Essentials Kit, want to
+                    suggest a useful product, or share a sustainability tip?
+                    Green Gazelle Goods would love to hear from you. A small
+                    shop works best when it listens to the people who use its
+                    products.
+                </p>
+
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85"
+                alt="People working together around a table">
+
+        </section>
+
+        <!-- This section uses the content-panel class to visually distinguish contact information from the introductory hero section. -->
+        <section class="content-panel">
+
+            <h3>Get In Touch</h3>
+
+            <p>
+                For this fictional website, contact us at
+                hello@greengazelle.example. The email uses the reserved
+                .example domain, so it is a demonstration address rather
+                than a working business inbox.
+            </p>
+
+            <p>
+                At Green Gazelle Goods, our guiding idea is that a few
+                well-chosen essentials can support thoughtful routines.
+                Explore the pages to learn about our concept, featured kit,
+                sample hours, pop-up location, and how the shop would work.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- This div uses an ID so JavaScript can insert the same shared footer component across all website pages. -->
+    <div id="footer-container"></div>
+
+    <script src="scripts/main.js"
+        data-header="components/header.html"
+        data-footer="components/footer.html"></script>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
 </body>
 </html>
