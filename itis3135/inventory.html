@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITIS3135 | Chelsi Ganugapanta's | Calm Gazelle | Inventory</title>
+    <title>Chelsi Ganugapanta's Calm Gazelle | ITIS3135 | Inventory</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/default.css">
 
     <style>
+        /* The inventory-page class centers the inventory content and limits its width. */
         .inventory-page {
             max-width: 1050px;
             margin: 30px auto;
@@ -19,11 +20,13 @@
             color: #234d32;
         }
 
+        /* The inventory-intro class improves the readability and spacing of the introduction. */
         .inventory-intro {
             line-height: 1.7;
             margin-bottom: 25px;
         }
 
+        /* The inventory-summary class arranges the three inventory statistics in a grid. */
         .inventory-summary {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -31,6 +34,7 @@
             margin-bottom: 30px;
         }
 
+        /* The summary-card class gives each inventory statistic its own visual container. */
         .summary-card {
             padding: 20px;
             background-color: #e4efe1;
@@ -46,13 +50,16 @@
             margin-bottom: 0;
         }
 
+        /* The table-wrapper class allows the table to scroll horizontally on smaller screens. */
         .table-wrapper {
             overflow-x: auto;
         }
 
+        /* The inventory-table class controls the table width and removes gaps between cells. */
         .inventory-table {
             width: 100%;
             border-collapse: collapse;
+            /* White provides a clean background that contrasts with the table's green header. */
             background-color: #ffffff;
         }
 
@@ -71,6 +78,7 @@
 
         .inventory-table thead {
             background-color: #234d32;
+            /* White text contrasts with the dark green table header for readability. */
             color: #ffffff;
         }
 
@@ -82,14 +90,17 @@
             background-color: #e4efe1;
         }
 
+        /* The stock-available class emphasizes products that are currently in stock. */
         .stock-available {
             font-weight: bold;
             color: #234d32;
         }
 
+        /* The inventory-note class separates the explanatory note from the product table. */
         .inventory-note {
             margin-top: 25px;
             padding: 18px;
+            /* White creates a neutral background for the inventory note. */
             background-color: #ffffff;
             border-left: 5px solid #39734d;
             line-height: 1.6;
@@ -106,15 +117,18 @@
             }
         }
     </style>
+
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
     <include src="components/header.html"></include>
 
+    <!-- The inventory-page class provides consistent spacing and layout for the main content. -->
     <main class="inventory-page">
-        <h2>Green Gazelle Goods | Product Inventory</h2>
+        <h2>Inventory</h2>
 
+        <!-- The inventory-intro class keeps the introductory paragraph readable and properly spaced. -->
         <p class="inventory-intro">
             Welcome to our inventory dashboard! This page provides
             an overview of the everyday essentials offered by
@@ -122,17 +136,28 @@
             prices, and current stock levels.
         </p>
 
+        <img
+        src="images/green-gazelle/water-bottle.jpg"
+        alt="Reusable water bottle sold by Green Gazelle Goods"
+        width="300"
+        >
+        
+        <!-- This section groups the three summary statistics together. -->
         <section class="inventory-summary" aria-label="Inventory summary">
+
+            <!-- This div creates a separate visual card for the total number of products. -->
             <div class="summary-card">
                 <h3>6</h3>
                 <p>Products Listed</p>
             </div>
 
+            <!-- This div creates a separate visual card for the number of product categories. -->
             <div class="summary-card">
                 <h3>4</h3>
                 <p>Product Categories</p>
             </div>
 
+            <!-- This div creates a separate visual card for the total number of units in stock. -->
             <div class="summary-card">
                 <h3>178</h3>
                 <p>Total Units in Stock</p>
@@ -141,7 +166,9 @@
 
         <h3>Available Products</h3>
 
+        <!-- This div makes the inventory table horizontally scrollable on smaller screens. -->
         <div class="table-wrapper">
+            <!-- The inventory-table class styles the product catalog consistently. -->
             <table class="inventory-table">
                 <caption>Green Gazelle Goods Product Catalog</caption>
 
@@ -163,6 +190,7 @@
                         <td>Drinkware</td>
                         <td>$18.00</td>
                         <td>24</td>
+                        <!-- The stock-available class highlights the product's availability status. -->
                         <td class="stock-available">In Stock</td>
                     </tr>
 
@@ -172,6 +200,7 @@
                         <td>Accessories</td>
                         <td>$8.00</td>
                         <td>32</td>
+                        <!-- The stock-available class highlights the product's availability status. -->
                         <td class="stock-available">In Stock</td>
                     </tr>
 
@@ -181,6 +210,7 @@
                         <td>Personal Care</td>
                         <td>$4.00</td>
                         <td>50</td>
+                        <!-- The stock-available class highlights the product's availability status. -->
                         <td class="stock-available">In Stock</td>
                     </tr>
 
@@ -190,6 +220,7 @@
                         <td>Kitchen</td>
                         <td>$22.00</td>
                         <td>15</td>
+                        <!-- The stock-available class highlights the product's availability status. -->
                         <td class="stock-available">In Stock</td>
                     </tr>
 
@@ -199,6 +230,7 @@
                         <td>Drinkware</td>
                         <td>$14.00</td>
                         <td>27</td>
+                        <!-- The stock-available class highlights the product's availability status. -->
                         <td class="stock-available">In Stock</td>
                     </tr>
 
@@ -208,12 +240,14 @@
                         <td>Accessories</td>
                         <td>$12.00</td>
                         <td>30</td>
+                        <!-- The stock-available class highlights the product's availability status. -->
                         <td class="stock-available">In Stock</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
+        <!-- The inventory-note class visually separates the additional inventory information. -->
         <section class="inventory-note">
             <h3>Our Inventory Approach</h3>
 
@@ -227,8 +261,8 @@
     </main>
 
     <include src="components/footer.html"></include>
-    <script src="https://unpkg.com/htmlincludejs"></script>
-    
+
+    <script src="scripts/include.js" defer></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
 </body>
 </html>
