@@ -60,3 +60,51 @@ header h1 {
 header p {
     margin-top: 0.5rem;
 }
+/* Navigation tabs */
+header nav a {
+    display: inline-block;
+    background-color: #315c43; /* Forest green */
+    color: #fffdf0; /* Ivory */
+    padding: 0.65rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 0.25rem;
+}
+
+/* Navigation hover effect */
+header nav a:hover {
+    background-color: #52785f;
+    color: #fffdf0;
+}
+
+/* Prevent visited links from changing color */
+header nav a:visited {
+    color: #fffdf0;
+}
+
+/* Prevent active/clicked links from changing color */
+header nav a:active {
+    color: #fffdf0;
+    background-color: #315c43;
+}
+
+/* Footer rounded light green box */
+footer {
+    background-color: #dcebd8; /* Light green */
+    color: #263b2b;
+    text-align: center;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    border-radius: 15px;
+    max-width: 90%;
+}
+
+/* Footer links */
+footer a {
+    color: #315c43;
+}
+
+/* Footer links after visiting */
+footer a:visited {
+    color: #315c43;
+}
