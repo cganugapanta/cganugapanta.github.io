@@ -108,3 +108,67 @@ footer a {
 footer a:visited {
     color: #315c43;
 }
+/* Product filtering buttons */
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.filter-button,
+.details-button,
+#kit-form button {
+    background-color: #315c43;
+    color: #fffdf5;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.filter-button:hover,
+.details-button:hover,
+#kit-form button:hover {
+    background-color: #52785f;
+}
+
+/* Product cards */
+
+.product-card {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+}
+
+/* Product details */
+
+.product-details {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #b39a5b;
+}
+
+/* Kit builder */
+
+#kit-builder {
+    margin-top: 2rem;
+    padding: 1.5rem;
+}
+
+#kit-form fieldset {
+    margin: 1rem 0;
+    padding: 1.5rem;
+}
+
+#kit-form label {
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+#kit-summary {
+    margin-top: 1.5rem;
+    padding: 1rem;
+}
