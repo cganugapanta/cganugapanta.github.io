@@ -47,4 +47,107 @@
 
         </section>
 
-        <!-- The content-panel class visually distinguishes the
+        <!-- The content-panel class visually distinguishes the service explanation from the introductory hero section. -->
+        <section class="content-panel">
+
+            <h3>How It Works</h3>
+
+            <p>
+                Our imagined pop-up also offers quick demonstrations on
+                packing a lunch, remembering reusable bags, and keeping
+                a portable utensil set handy. The goal is to make practical
+                habits feel approachable, with no pressure to change
+                everything at once.
+            </p>
+
+            <p>
+                At Green Gazelle Goods, our guiding idea is that a few
+                well-chosen essentials can support thoughtful routines.
+                Explore the pages to learn about our concept, featured kit,
+                sample hours, pop-up location, and how the shop would work.
+            </p>
+
+        </section>
+
+        <!-- The kit-builder ID lets JavaScript locate the custom kit section. -->
+        <section id="kit-builder">
+
+            <h2>Build Your Own Kit</h2>
+
+            <p>
+                Choose the sustainable essentials you would like
+                included in your custom kit.
+            </p>
+
+            <!-- The kit-form ID allows JavaScript to process the user's selections when the form is submitted. -->
+            <form id="kit-form">
+
+                <fieldset>
+
+                    <legend>Select Your Essentials</legend>
+
+                    <label>
+                        <input type="checkbox" name="kit-item" value="Reusable Water Bottle">
+                        Reusable Water Bottle
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" name="kit-item" value="Reusable Shopping Bag">
+                        Reusable Shopping Bag
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" name="kit-item" value="Bamboo Utensil Set">
+                        Bamboo Utensil Set
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" name="kit-item" value="Reusable Coffee Cup">
+                        Reusable Coffee Cup
+                    </label>
+
+                    <br>
+
+                    <label>
+                        <input type="checkbox" name="kit-item" value="Eco-Friendly Notebook">
+                        Eco-Friendly Notebook
+                    </label>
+
+                </fieldset>
+
+                <button type="submit">
+                    Create My Kit
+                </button>
+
+                <button type="reset">
+                    Clear Selections
+                </button>
+
+            </form>
+
+            <!-- The kit-summary ID gives JavaScript a location to display the custom kit results. -->
+            <div id="kit-summary" aria-live="polite"></div>
+
+        </section>
+
+    </main>
+
+    <!-- This div uses an ID so JavaScript can insert the same shared footer component across all website pages. -->
+    <div id="footer-container"></div>
+
+    <script src="scripts/main.js"
+        data-header="components/header.html"
+        data-footer="components/footer.html"></script>
+
+    <script src="scripts/kit-builder.js"></script>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
+</body>
+</html>
