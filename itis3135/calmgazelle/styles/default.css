@@ -14,7 +14,7 @@ main{width:min(1100px,90%);margin:2.5rem auto 4rem}
 .hero-copy{padding:.5rem}
 .eyebrow{color:#8b6a35;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.14em}
 h1,h2{color:var(--forest);font-family:Georgia,"Times New Roman",serif;line-height:1.2}
-h1{font-size:clamp(2rem,4.5vw,3.5rem);margin:.5rem 0 1rem}
+h1{font-size:clamp(2rem,4.5vw,3.5rem);margin:.5rem 0 .5rem}
 h2{font-size:clamp(1.5rem,3vw,2.2rem);margin-top:0}
 .hero img{display:block;width:100%;min-height:280px;max-height:440px;object-fit:cover;border-radius:.8rem}
 .content-panel{margin-top:1.5rem;padding:clamp(1.5rem,4vw,3rem);background:#e9eee4;border-left:5px solid var(--gold);border-radius:.5rem}
@@ -50,11 +50,6 @@ footer {
 header a,
 footer a {
     text-decoration: none;
-}
-
-/* Header and footer spacing */
-header h1 {
-    margin-bottom: 0.5rem;
 }
 
 header p {
