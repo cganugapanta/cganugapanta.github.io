@@ -24,3 +24,39 @@ h2{font-size:clamp(1.5rem,3vw,2.2rem);margin-top:0}
 .site-footer strong{letter-spacing:.04em}
 a:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 @media(max-width:720px){.hero{grid-template-columns:1fr}.hero img{min-height:220px;max-height:320px}main{width:94%;margin-top:1.2rem}.site-header{padding-inline:3%}}
+/* Shared header component */
+header {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Shared navigation */
+header nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Shared footer component */
+footer {
+    text-align: center;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+/* Header and footer links */
+header a,
+footer a {
+    text-decoration: none;
+}
+
+/* Header and footer spacing */
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    margin-top: 0.5rem;
+}
