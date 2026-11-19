@@ -7,7 +7,6 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="styles/default.css">
 
-    
     <style>
         .survey-page {
             max-width: 850px;
@@ -15,7 +14,7 @@
             padding: 25px;
             background-color: #f0f0f0;
             border-radius: 12px;
-            color: #234d32
+            color: #234d32;
         }
 
         .survey-intro {
@@ -94,6 +93,15 @@
             margin-top: 20px;
             font-size: 0.95rem;
         }
+
+        .survey-image {
+            display: block;
+            max-width: 100%;
+            width: 400px;
+            height: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+        }
     </style>
 
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
@@ -101,9 +109,19 @@
 
 <body>
 
-    <div data-include="components/header.html"></div>
-        <main class="survey-page">
+    <!-- The shared header is loaded from the components folder. -->
+    <include src="components/header.html"></include>
+
+    <!-- Classes group related survey elements for consistent styling. -->
+    <main class="survey-page">
+
         <h2>Green Gazelle Goods | Customer Feedback Survey</h2>
+
+        <img
+            src="images/gazelle.jpg"
+            alt="Gazelle representing Green Gazelle Goods"
+            class="survey-image"
+        >
 
         <p class="survey-intro">
             Welcome to Green Gazelle Goods! We believe that small,
@@ -115,6 +133,7 @@
         <h3>Tell Us About Yourself</h3>
 
         <form class="survey-form" action="#" method="get">
+
             <label for="customer-name">Full Name:</label>
             <input
                 type="text"
@@ -177,7 +196,7 @@
                     <input
                         type="radio"
                         name="shopping-frequency"
-                        value="new"
+                        value="never"
                     >
                     Never
                 </label>
@@ -248,20 +267,21 @@
             ></textarea>
 
             <button type="submit">Submit Feedback</button>
+
         </form>
 
         <p class="survey-note">
             Thank you for helping Green Gazelle Goods make sustainable
             shopping more convenient!
         </p>
+
     </main>
 
-    <footer>
-    <div data-include="components/footer.html"></div>
-    </footer>
+    <!-- The shared footer is loaded from the components folder. -->
+    <include src="components/footer.html"></include>
 
-    <script src="https://unpkg.com/htmlincludejs"></script>
-    
+    <script src="scripts/include.js" defer></script>
     <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
 </body>
 </html>
