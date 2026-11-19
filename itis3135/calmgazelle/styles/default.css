@@ -8,7 +8,7 @@ body{margin:0;color:var(--charcoal);background:var(--cream);font-family:"Trebuch
 .tagline{margin:.15rem 0 1rem;color:#68766a}
 .nav-list{display:flex;flex-wrap:wrap;justify-content:center;gap:.45rem;list-style:none;padding:0;margin:0}
 .nav-list a{display:inline-block;padding:.45rem .85rem;border-radius:2rem;color:var(--forest);text-decoration:none;font-size:.95rem}
-.nav-list a:hover,.nav-list a:focus,.nav-list a[aria-current=page]{background:var(--forest);color:white}
+.nav-list a:hover,.nav-list a:focus,.nav-list a[aria-current=page]{background:var(--forest);color:rgb(255, 249, 249)}
 main{width:min(1100px,90%);margin:2.5rem auto 4rem}
 .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(1.5rem,5vw,4rem);padding:clamp(1.25rem,4vw,3rem);background:var(--paper);border:1px solid var(--line);border-radius:1.2rem;box-shadow:0 12px 30px rgba(36,75,59,.07)}
 .hero-copy{padding:.5rem}
@@ -171,4 +171,9 @@ footer a:visited {
 #kit-summary {
     margin-top: 1.5rem;
     padding: 1rem;
+}
+/* Keeps the website content centered and prevents excessive line lengths. */
+body {
+    max-width: 1200px;
+    margin: auto;
 }
