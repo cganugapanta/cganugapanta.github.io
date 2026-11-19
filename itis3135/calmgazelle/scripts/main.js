@@ -16,7 +16,13 @@ async function loadComponent(component, elementId) {
 }
 
 // Load header and footer when the page loads
+// Load header and footer when the page loads
 document.addEventListener("DOMContentLoaded", function () {
-    loadComponent("components/header.html", "header-container");
-    loadComponent("components/footer.html", "footer-container");
+    const script = document.querySelector('script[data-header]');
+
+    const headerPath = script.dataset.header;
+    const footerPath = script.dataset.footer;
+
+    loadComponent(headerPath, "header-container");
+    loadComponent(footerPath, "footer-container");
 });
