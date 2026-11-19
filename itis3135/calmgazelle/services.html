@@ -1,96 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Gazelle Goods | Services</title><link rel="stylesheet" href="styles/default.css">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="styles/default.css">
-<script src="https://lint.page/kit/4d0fe3.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Gazelle Goods | Services</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/default.css">
+
+    <script src="https://lint.page/kit/4d0fe3.js" defer></script>
 </head>
+
 <body>
-<div id="header-container"></div>
-<main>
-<section class="hero">
-<div class="hero-copy">
-<p class="eyebrow">Easy choices, everyday habits</p>
-<h1>How Green Gazelle Goods works</h1>
-<p>We keep shopping straightforward: choose the Everyday Essentials Kit, learn what each item is for, and build a routine that fits your day. The kit is a starting point, not a rulebook—customers can use the pieces together or incorporate them one at a time.</p>
-</div>
-<img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=85" alt="Nature-inspired scene representing sustainable everyday living">
-</section>
-<section class="content-panel">
-<h2>How It Works</h2>
-<p>Our imagined pop-up also offers quick demonstrations on packing a lunch, remembering reusable bags, and keeping a portable utensil set handy. The goal is to make practical habits feel approachable, with no pressure to change everything at once</p>
-<p>At Green Gazelle Goods, our guiding idea is that a few well-chosen essentials can support thoughtful routines. Explore the pages to learn about our concept, featured kit, sample hours, pop-up location, and how the shop would work.</p>
-</section>
-<section id="kit-builder">
 
-    <h2>Green Gazelle Goods | Build Your Own Kit</h2>
+    <!-- This div uses an ID so JavaScript can insert the shared header component consistently across all pages. -->
+    <div id="header-container"></div>
 
-    <p>
-        Choose the sustainable essentials you would like
-        included in your custom kit.
-    </p>
+    <main>
 
-    <form id="kit-form">
+        <h2>Services</h2>
 
-        <fieldset>
+        <!-- The hero class arranges the introductory text and image in a consistent two-column layout. -->
+        <section class="hero">
 
-            <legend>Select Your Essentials</legend>
+            <!-- This div uses the hero-copy class to group introductory text separately from the accompanying image. -->
+            <div class="hero-copy">
 
-            <label>
-                <input type="checkbox" name="kit-item" value="Reusable Water Bottle">
-                Reusable Water Bottle
-            </label>
+                <p class="eyebrow">Easy choices, everyday habits</p>
 
-            <br>
+                <h3>How Green Gazelle Goods Works</h3>
 
-            <label>
-                <input type="checkbox" name="kit-item" value="Reusable Shopping Bag">
-                Reusable Shopping Bag
-            </label>
+                <p>
+                    We keep shopping straightforward: choose the Everyday
+                    Essentials Kit, learn what each item is for, and build
+                    a routine that fits your day. The kit is a starting
+                    point, not a rulebook—customers can use the pieces
+                    together or incorporate them one at a time.
+                </p>
 
-            <br>
+            </div>
 
-            <label>
-                <input type="checkbox" name="kit-item" value="Bamboo Utensil Set">
-                Bamboo Utensil Set
-            </label>
+            <img
+                src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=85"
+                alt="Notebook and stationery arranged on a desk">
 
-            <br>
+        </section>
 
-            <label>
-                <input type="checkbox" name="kit-item" value="Reusable Coffee Cup">
-                Reusable Coffee Cup
-            </label>
-
-            <br>
-
-            <label>
-                <input type="checkbox" name="kit-item" value="Eco-Friendly Notebook">
-                Eco-Friendly Notebook
-            </label>
-
-        </fieldset>
-
-        <button type="submit">
-            Create My Kit
-        </button>
-
-        <button type="reset">
-            Clear Selections
-        </button>
-
-    </form>
-
-    <div id="kit-summary" aria-live="polite"></div>
-
-</section>
-</main>
-<div id="footer-container"></div>
-<script src="scripts/main.js" data-header="components/header.html" data-footer="components/footer.html"></script>
-<script src="scripts/kit-builder.js"></script>
-<script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
-</body>
-</html>
+        <!-- The content-panel class visually distinguishes the

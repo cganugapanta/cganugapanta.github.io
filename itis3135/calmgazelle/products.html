@@ -1,129 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Gazelle Goods | Products</title><link rel="stylesheet" href="styles/default.css">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="styles/default.css">
-<script src="https://lint.page/kit/4d0fe3.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Gazelle Goods | Products</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/default.css">
+
+    <script src="https://lint.page/kit/4d0fe3.js" defer></script>
 </head>
+
 <body>
-<div id="header-container"></div>
-<main>
-<section class="hero">
-<div class="hero-copy">
-<p class="eyebrow">Useful things, carefully gathered</p>
-<h1>The Everyday Essentials Kit</h1>
-<p>Our featured product is the Everyday Essentials Kit, a compact collection for days spent moving between classes, work, errands, and home. Each kit includes a reusable water bottle, a foldable shopping bag, a lunch container, and a portable cutlery set.</p>
-</div>
-<img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&q=85" alt="Nature-inspired scene representing sustainable everyday living">
-</section>
-<section class="content-panel">
-<h2>Products</h2>
-<p>The kit is intentionally focused. Rather than offering a huge catalog, Green Gazelle Goods keeps its selection small and practical. The fictional kit is listed at $39.99 and makes a thoughtful starter set or gift.</p>
-<p>At Green Gazelle Goods, our guiding idea is that a few well-chosen essentials can support thoughtful routines. Explore the pages to learn about our concept, featured kit, sample hours, pop-up location, and how the shop would work.</p>
-</section>
-<section id="product-filter">
 
-    <h2>Green Gazelle Goods | Explore Our Kits</h2>
+    <!-- This div uses an ID so JavaScript can insert the shared header component consistently across all pages. -->
+    <div id="header-container"></div>
 
-    <p>Browse our sustainable kits by category.</p>
+    <main>
 
-    <div class="filter-buttons">
+        <!-- The hero class arranges the introductory text and product image in a consistent two-column layout. -->
+        <section class="hero">
 
-        <button type="button" class="filter-button" data-category="all">
-            All Products
-        </button>
+            <!-- This div uses the hero-copy class to group introductory text separately from the accompanying image. -->
+            <div class="hero-copy">
 
-        <button type="button" class="filter-button" data-category="home">
-            Home
-        </button>
+                <p class="eyebrow">Useful things, carefully gathered</p>
 
-        <button type="button" class="filter-button" data-category="travel">
-            Travel
-        </button>
+                <h3>The Everyday Essentials Kit</h3>
 
-        <button type="button" class="filter-button" data-category="workspace">
-            Workspace
-        </button>
+                <p>
+                    Our featured product is the Everyday Essentials Kit,
+                    a compact collection for days spent moving between
+                    classes, work, errands, and home. Each kit includes
+                    a reusable water bottle, a foldable shopping bag,
+                    a lunch container, and a portable cutlery set.
+                </p>
 
-    </div>
+            </div>
 
-</section>
-<section class="product-card" data-category="home">
+            <img
+                src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1200&q=85"
+                alt="Reusable water bottle">
 
-    <h3>Home Essentials Kit</h3>
+        </section>
 
-    <p>
-        A collection of reusable essentials designed
-        to help make everyday routines more sustainable.
-    </p>
+        <!-- The content-panel class visually distinguishes the product introduction from the rest of the page. -->
+        <section class="content-panel">
 
-    <button type="button" class="details-button">
-        View Details
-    </button>
+            <h2>Products</h2>
 
-    <div class="product-details" hidden>
-        <p>
-            This kit includes reusable household essentials
-            designed to reduce single-use waste and encourage
-            more sustainable everyday habits.
-        </p>
-        <p>Price: $39.99</p>
-    </div>
+            <p>
+                The kit is intentionally focused. Rather than offering
+                a huge catalog, Green Gazelle Goods keeps its selection
+                small and practical. The fictional kit is listed at
+                $39.99 and makes a thoughtful starter set or gift.
+            </p>
 
-</section>
-<section class="product-card" data-category="travel">
+            <p>
+                At Green Gazelle Goods, our guiding idea is that a few
+                well-chosen essentials can support thoughtful routines.
+                Explore the pages to learn about our concept, featured kit,
+                sample hours, pop-up location, and how the shop would work.
+            </p>
 
-    <h3>Sustainable Travel Kit</h3>
+        </section>
 
-    <p>
-        Travel-friendly reusable essentials for
-        environmentally conscious adventures.
-    </p>
+        <!-- The product-filter ID allows JavaScript to identify this section. The filter-buttons class groups the category buttons for consistent styling. -->
+        <section id="product-filter">
 
-    <button type="button" class="details-button">
-        View Details
-    </button>
+            <h2>Green Gazelle Goods | Explore Our Kits</h2>
 
-    <div class="product-details" hidden>
-        <p>
-            This kit includes portable reusable essentials
-            designed for sustainable travel and everyday
-            adventures.
-        </p>
-        <p>Price: $34.99</p>
-    </div>
+            <p>Browse our sustainable kits by category.</p>
 
-</section>
-<section class="product-card" data-category="workspace">
+            <div class="filter-buttons">
 
-    <h3>Eco Desk Kit</h3>
+                <button type="button" class="filter-button" data-category="all">
+                    All Products
+                </button>
 
-    <p>
-        Sustainable accessories for a more organized
-        and environmentally conscious workspace.
-    </p>
+                <button type="button" class="filter-button" data-category="home">
+                    Home
+                </button>
 
-    <button type="button" class="details-button">
-        View Details
-    </button>
+                <button type="button" class="filter-button" data-category="travel">
+                    Travel
+                </button>
 
-    <div class="product-details" hidden>
-        <p>
-            This kit includes practical workspace accessories
-            designed to encourage organized and sustainable
-            work habits.
-        </p>
-        <p>Price: $29.99</p>
-    </div>
+                <button type="button" class="filter-button" data-category="workspace">
+                    Workspace
+                </button>
 
-</section>
-</main>
-<div id="footer-container"></div>
-<script src="scripts/main.js" data-header="components/header.html" data-footer="components/footer.html"></script>
-<script src="scripts/products.js"></script>
-<script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+            </div>
+
+        </section>
+
+        <!-- The product-card class gives each product a consistent card layout. The data-category attribute allows the JavaScript filter to show matching products. -->
+        <section class="product-card" data-category="home">
+
+            <h3>Home Essentials Kit</h3>
+
+            <p>
+                A collection of reusable essentials designed
+                to help make everyday routines more sustainable.
+            </p>
+
+            <button type="button" class="details-button">
+                View Details
+            </button>
+
+            <!-- The product-details class styles the expandable information, and the hidden attribute keeps it collapsed until the user selects View Details. -->
+            <div class="product-details" hidden>
+                <p>
+                    This kit includes reusable household essentials
+                    designed to reduce single-use waste and encourage
+                    more sustainable everyday habits.
+                </p>
+                <p>Price: $39.99</p>
+            </div>
+
+        </section>
+
+        <!-- The product-card class keeps this product consistent with the other cards, while data-category identifies it as a travel product for filtering. -->
+        <section class="product-card" data-category="travel">
+
+            <h3>Sustainable Travel Kit</h3>
+
+            <p>
+                Travel-friendly reusable essentials for
+                environmentally conscious adventures.
+            </p>
+
+            <button type="button" class="details-button">
+                View Details
+            </button>
+
+            <!-- The product-details class styles the expandable information, and the hidden attribute keeps it collapsed until the user selects View Details. -->
+            <div class="product-details" hidden>
+                <p>
+                    This kit includes portable reusable essentials
+                    designed for sustainable travel and everyday
+                    adventures.
+                </p>
+                <p>Price: $34.99</p>
+            </div>
+
+        </section>
+
+        <!-- The product-card class keeps this product consistent with the other cards, while data-category identifies it as a workspace product for filtering. -->
+        <section class="product-card" data-category="workspace">
+
+            <h3>Eco Desk Kit</h3>
+
+            <p>
+                Sustainable accessories for a more organized
+                and environmentally conscious workspace.
+            </p>
+
+            <button type="button" class="details-button">
+                View Details
+            </button>
+
+            <!-- The product-details class styles the expandable information, and the hidden attribute keeps it collapsed until the user selects View Details. -->
+            <div class="product-details" hidden>
+                <p>
+                    This kit includes practical workspace accessories
+                    designed to encourage organized and sustainable
+                    work habits.
+                </p>
+                <p>Price: $29.99</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- This div uses an ID so JavaScript can insert the same shared footer component across all website pages. -->
+    <div id="footer-container"></div>
+
+    <script src="scripts/main.js"
+        data-header="components/header.html"
+        data-footer="components/footer.html"></script>
+
+    <script src="scripts/products.js"></script>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
 </body>
 </html>
