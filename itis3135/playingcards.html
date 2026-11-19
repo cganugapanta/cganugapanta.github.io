@@ -8,19 +8,7 @@
     <link rel="stylesheet" href="styles/default.css">
 
     <style>
-        /*
-         * DIV AND SPAN ELEMENT JUSTIFICATION:
-         * The div elements group related product content and organize the product grid.
-         * The span elements display small product category labels.
-         * These elements are needed to structure and style the product cards.
-         *
-         * CLASS AND ID JUSTIFICATION:
-         * The class attributes apply reusable styles to the product grid,
-         * individual cards, images, descriptions, and category labels.
-         * No id attributes are necessary because these styles are shared
-         * across multiple elements rather than targeting one unique element.
-         */
-
+        /* The cards-page class centers the main content and limits its width. */
         .cards-page {
             max-width: 1100px;
             margin: 30px auto;
@@ -32,18 +20,21 @@
             color: #234d32;
         }
 
+        /* The cards-intro class controls the width and spacing of the introductory paragraph. */
         .cards-intro {
             max-width: 750px;
             line-height: 1.7;
             margin-bottom: 30px;
         }
 
+        /* The product-grid class arranges all product cards in responsive columns. */
         .product-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: 25px;
         }
 
+        /* The product-card class gives each product its own bordered and elevated container. */
         .product-card {
             overflow: hidden;
             /* White cards provide contrast against the surrounding page background. */
@@ -60,6 +51,7 @@
             object-fit: cover;
         }
 
+        /* The product-card-content class adds spacing around each card's text. */
         .product-card-content {
             padding: 18px;
         }
@@ -72,6 +64,7 @@
             line-height: 1.6;
         }
 
+        /* The product-tag class styles the category labels as small rounded badges. */
         .product-tag {
             display: inline-block;
             padding: 5px 9px;
@@ -100,9 +93,11 @@
 <body>
     <include src="components/header.html"></include>
 
+    <!-- The cards-page class applies the page's centered layout and spacing. -->
     <main class="cards-page">
         <h2>Playing Cards</h2>
 
+        <!-- The cards-intro class keeps the introductory text at a readable width. -->
         <p class="cards-intro">
             Meet a few of our favorite everyday essentials!
             Green Gazelle Goods brings together practical products
@@ -110,7 +105,9 @@
             choices in their daily routines.
         </p>
 
+        <!-- This div creates the grid that organizes all six product cards. -->
         <div class="product-grid">
+
             <article class="product-card">
                 <img
                     src="images/green-gazelle/water-bottle.jpg"
@@ -118,7 +115,9 @@
                     loading="lazy"
                 >
 
+                <!-- This div groups the water bottle's category and description. -->
                 <div class="product-card-content">
+                    <!-- This span displays the water bottle's product category. -->
                     <span class="product-tag">Drinkware</span>
                     <h3>Reusable Water Bottle</h3>
                     <p>
@@ -135,7 +134,9 @@
                     loading="lazy"
                 >
 
+                <!-- This div groups the shopping bag's category and description. -->
                 <div class="product-card-content">
+                    <!-- This span displays the shopping bag's product category. -->
                     <span class="product-tag">Accessories</span>
                     <h3>Everyday Shopping Bag</h3>
                     <p>
@@ -152,7 +153,9 @@
                     loading="lazy"
                 >
 
+                <!-- This div groups the toothbrush's category and description. -->
                 <div class="product-card-content">
+                    <!-- This span displays the toothbrush's product category. -->
                     <span class="product-tag">Personal Care</span>
                     <h3>Bamboo Toothbrush</h3>
                     <p>
@@ -169,7 +172,9 @@
                     loading="lazy"
                 >
 
+                <!-- This div groups the lunch container's category and description. -->
                 <div class="product-card-content">
+                    <!-- This span displays the lunch container's product category. -->
                     <span class="product-tag">Kitchen</span>
                     <h3>Lunch Container</h3>
                     <p>
@@ -186,7 +191,9 @@
                     loading="lazy"
                 >
 
+                <!-- This div groups the coffee cup's category and description. -->
                 <div class="product-card-content">
+                    <!-- This span displays the coffee cup's product category. -->
                     <span class="product-tag">Drinkware</span>
                     <h3>Reusable Coffee Cup</h3>
                     <p>
@@ -203,7 +210,9 @@
                     loading="lazy"
                 >
 
+                <!-- This div groups the cutlery set's category and description. -->
                 <div class="product-card-content">
+                    <!-- This span displays the cutlery set's product category. -->
                     <span class="product-tag">Everyday Essentials</span>
                     <h3>Portable Cutlery Set</h3>
                     <p>
@@ -212,6 +221,7 @@
                     </p>
                 </div>
             </article>
+
         </div>
     </main>
 
