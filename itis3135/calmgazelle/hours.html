@@ -1,32 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Green Gazelle Goods | Hours</title><link rel="stylesheet" href="styles/default.css">
-<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
-<link rel="stylesheet" href="styles/default.css">
-<script src="https://lint.page/kit/4d0fe3.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Green Gazelle Goods | Hours</title>
+
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/default.css">
+
+    <script src="https://lint.page/kit/4d0fe3.js" defer></script>
 </head>
+
 <body>
-<div id="header-container"></div>
-<main>
-<section class="hero">
-<div class="hero-copy">
-<p class="eyebrow">Take your time—we're here</p>
-<h1>Shop hours</h1>
-<p>Green Gazelle Goods is imagined as a small pop-up boutique with a relaxed schedule. Sample hours are Tuesday through Friday, 11 a.m. to 6 p.m., and Saturday, 10 a.m. to 4 p.m. We take Sunday and Monday to restock and reset.</p>
-</div>
-<img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85" alt="Nature-inspired scene representing sustainable everyday living">
-</section>
-<section class="content-panel">
-<h2>Hours</h2>
-<p>Seasonal pop-ups may have different hours, so this page is the place to check before visiting. These hours are part of the fictional business concept and do not represent a real storefront</p>
-<p>At Green Gazelle Goods, our guiding idea is that a few well-chosen essentials can support thoughtful routines. Explore the pages to learn about our concept, featured kit, sample hours, pop-up location, and how the shop would work.</p>
-</section>
-</main>
-<div id="footer-container"></div>
-<script src="scripts/main.js" data-header="components/header.html" data-footer="components/footer.html"></script>
-<script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
+    <!-- This div uses an ID so JavaScript can insert the shared header component consistently across all pages. -->
+    <div id="header-container"></div>
+
+    <main>
+
+        <h2>Hours</h2>
+
+        <!-- This section uses the hero class to arrange the introductory text and image in a consistent two-column layout. -->
+        <section class="hero">
+
+            <!-- This div uses the hero-copy class to group introductory text separately from the accompanying image. -->
+            <div class="hero-copy">
+
+                <p class="eyebrow">Take your time—we're here</p>
+
+                <h3>Shop Hours</h3>
+
+                <p>
+                    Green Gazelle Goods is imagined as a small pop-up boutique
+                    with a relaxed schedule. Sample hours are Tuesday through
+                    Friday, 11 a.m. to 6 p.m., and Saturday, 10 a.m. to 4 p.m.
+                    We take Sunday and Monday to restock and reset.
+                </p>
+
+            </div>
+
+            <img
+                src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=85"
+                alt="Interior of a retail shop with clothing displays">
+
+        </section>
+
+        <!-- This section uses the content-panel class to visually distinguish additional store-hour information from the introductory hero section. -->
+        <section class="content-panel">
+
+            <h3>Before You Visit</h3>
+
+            <p>
+                Seasonal pop-ups may have different hours, so this page is
+                the place to check before visiting. These hours are part of
+                the fictional business concept and do not represent a real
+                storefront.
+            </p>
+
+            <p>
+                At Green Gazelle Goods, our guiding idea is that a few
+                well-chosen essentials can support thoughtful routines.
+                Explore the pages to learn about our concept, featured kit,
+                sample hours, pop-up location, and how the shop would work.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- This div uses an ID so JavaScript can insert the same shared footer component across all website pages. -->
+    <div id="footer-container"></div>
+
+    <script src="scripts/main.js"
+        data-header="components/header.html"
+        data-footer="components/footer.html"></script>
+
+    <script src="https://divonbriesen.github.io/teaching/tools/standards-check.js" defer></script>
+
 </body>
 </html>
