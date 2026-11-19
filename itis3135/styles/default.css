@@ -16,12 +16,13 @@ header, footer {
     border-radius: 6px;
 }
 
-h1, h2, h3 {
+h2, h3 {
     /* Secondary heading font */
     font-family: "Calibri", "Candara", Segoe, optima, sans-serif;
 }
 
 header h1 {
+    font-family: "Calibri", "Candara", Segoe, optima, sans-serif;
     margin: 0 0 10px 0;
     font-size: 1.8rem;
 }
